@@ -160,7 +160,8 @@ a.nav-link:hover {
     justify-content: center;
   }
 
-  .socials {
+  /* .socials {
     margin-top: 100%;
-  }
+    margin-bottom: 0;
+  } */
 }
