@@ -14,116 +14,149 @@
       type="text/css"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
     <title>Errand Genie</title>
   </head>
   <body>
-    <div class="bannerContainer">
-      <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
-        <a class="navbar-brand" href="index.html"
-          ><img src="img/Group 27.png" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <header>
+      <div class="bannerContainer">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark col-md-12 navbar"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/Group 27.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse float-right text-right pr-0"
+            id="navbarNav"
+          >
+            <ul class="nav navbar-nav navbar-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Logistics Movement</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Errand Services</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Delivery Services</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
         <div
-          class="collapse navbar-collapse float-right text-right pr-0"
-          id="navbarNav"
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
         >
-          <ul class="nav navbar-nav navbar-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Logistics Movement</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Errand Services</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Delivery Services</a>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="info">
+                <h1>Logistics</h1>
+                <p>We move logistics across Ghana</p>
+                <a href="login.html" class="btn btn-dark bg-black btn-lg"
+                  >Get Started</a
+                >
               </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="info">
-              <h1>Logistics</h1>
-              <p>We move logistics across Ghana</p>
-              <a href="login.html" class="btn btn-dark bg-black btn-lg"
-                >Sign In</a
-              >
-              <a href="sign-up.html" class="btn btn-light btn-lg">Sign Up</a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="info">
-              <h1>Errands</h1>
-              <p>Make the list and we'll shop it!</p>
-              <a href="login.html" class="btn btn-dark bg-black btn-lg"
-                >Sign In</a
-              >
-              <a href="sign-up.html" class="btn btn-light btn-lg">Sign Up</a>
+            <div class="carousel-item">
+              <div class="info">
+                <h1>Errands</h1>
+                <p>Make the list and we'll shop it!</p>
+                <a href="login.html" class="btn btn-dark bg-black btn-lg"
+                  >Get Started</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="info">
-              <h1>Delivery</h1>
-              <p>Door-to-door at its best</p>
-              <a href="login.html" class="btn btn-dark bg-black btn-lg"
-                >Sign In</a
-              >
-              <a href="sign-up.html" class="btn btn-light btn-lg">Sign Up</a>
+            <div class="carousel-item">
+              <div class="info">
+                <h1>Delivery</h1>
+                <p>Door-to-door at its best</p>
+                <a href="login.html" class="btn btn-dark bg-black btn-lg"
+                  >Get started</a
+                >
+              </div>
+            </div>
+            <div class="icons">
+                <i class="fa fa-bicycle" aria-hidden="true"></i>
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </header>
+    <section>
+      <div class="row container" style="margin: auto;">
+        <div class="card-columns">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./img/Group 1.png" alt="Logistics Movement" style="height: 10rem;" />
+            <div class="card-body">
+              <h4 class="card-title">We help you move your logistics hassle-free</h4>
+              <p class="card-text">Text</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./img/Group 3.png" alt="Errand Services" style="height: 10rem;" />
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Text</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./img/Group 5.png" alt="Delivery Services" style="height: 10rem;" />
+            <div class="card-body">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
