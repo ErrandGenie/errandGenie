@@ -1,0 +1,111 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* header */
+.bannerContainer {
+  background: url(img/ayo-ogunseinde.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 40rem;
+}
+
+.message {
+  padding: 20rem 5rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar a img {
+  width: 160px;
+  height: 80px;
+}
+
+.navbar ul {
+  margin-left: 50%;
+}
+
+.navbar .nav-item .dropdown-menu {
+  display: none;
+}
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav > li {
+  padding-left: 30px;
+}
+
+.active > a {
+  color: gold !important;
+  text-decoration: underline gold;
+}
+
+a.nav-link:hover {
+  color: gold !important;
+  text-decoration: underline gold;
+}
+
+/* end of header */
+
+/* Section */
+.col-md-4,
+.col-md-6 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.body {
+    padding-top: 50px;
+}
+
+.body1 {
+    padding-top: 150px ;
+}
+
+.body2 {
+    padding-top: 200px;
+}
+section {
+  width: 100%;
+}
+
+.circle {
+  font-size: 7rem;
+}
+
+/* end of section */
+
+/* footer */
+
+footer {
+  color: #fff;
+  background-color: #000;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+}
+
+footer .fab {
+  font-size: 20px;
+  padding: 20px;
+}
