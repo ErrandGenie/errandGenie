@@ -164,10 +164,7 @@ a.nav-link:hover {
 
   .socials {
     display: flex;
-    margin-left: auto;
-    margin-right: 20%;
-    margin-top: 90%;
-    position: relative;
-    margin-bottom: 0;
+    margin-left: 10%;
+    margin-top: 100%;
   }
 }
