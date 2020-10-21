@@ -163,6 +163,12 @@ footer .fab {
   font-size: 20px;
   padding: 20px;
 }
+footer .col-md-4 {
+  margin-left: 10%;
+}
+footer .col-md-3 {
+  margin-left: 2%;
+}
 
 @media screen and (max-width: 780px) {
   .body {
@@ -186,10 +192,10 @@ footer .fab {
   form {
     width: 100%;
   }
-  footer .col-md-4 {
+  /* footer .col-md-4 {
     margin-left: 10%;
   }
   footer .col-md-3 {
     margin-left: 2%;
-  }
+  } */
 }
