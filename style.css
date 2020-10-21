@@ -150,6 +150,7 @@ a.nav-link:hover {
   background-color: #fff;
 }
 
+
 @media screen and (max-width: 780px) {
   .navbar {
     padding: 0;
@@ -168,4 +169,10 @@ a.nav-link:hover {
   .socials {
     margin-top: 90%;
   }
+  /* Mobile gutter fix */
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
 }
