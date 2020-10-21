@@ -173,6 +173,6 @@ a.nav-link:hover {
     display: flex;
     margin-left: 10%;
     margin-top: 100%;
-    padding-top: 100%;
+    padding-top: 5%;
   }
 }
