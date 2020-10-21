@@ -83,21 +83,24 @@ a.nav-link:hover {
   height: 100%;
   width: 100%;
   background: url("./img/logisticsintruck.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
   background: url("./img/veggies.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
   background: url("./img/deliveryguy.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item .info {
@@ -142,6 +145,10 @@ a.nav-link:hover {
   margin-left: 20px;
 }
 
+.socials li {
+  list-style: none;
+}
+
 .circle {
   border: 1px solid white;
   border-radius: 100%;
@@ -166,5 +173,6 @@ a.nav-link:hover {
     display: flex;
     margin-left: 10%;
     margin-top: 100%;
+    padding-top: 100%;
   }
 }
