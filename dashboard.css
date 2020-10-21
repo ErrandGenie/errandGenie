@@ -82,18 +82,30 @@ a.nav-link:hover {
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
   background: url("./img/veggies.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
   background: url("./img/deliveryguy.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item .info {
