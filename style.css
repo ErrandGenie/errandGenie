@@ -132,6 +132,9 @@ a.nav-link:hover {
   margin-top: 15%;
   margin-right: 50px;
   float: right;
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
 }
 
 .circle {
@@ -139,7 +142,6 @@ a.nav-link:hover {
   border-radius: 100%;
   padding: 5px 10px;
   margin: 20px;
-  z-index: -100;
   font-size: 1.2em;
   font-weight: 500;
   background-color: #fff;
@@ -149,18 +151,18 @@ a.nav-link:hover {
   .navbar {
     padding: 0;
   }
+
   .navbar ul {
     background-color: black;
     opacity: 0.7;
   }
 
-  .circle {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-  }
-
   .socials {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20%;
     margin-top: 90%;
+    position: relative;
+    margin-bottom: 0;
   }
 }
