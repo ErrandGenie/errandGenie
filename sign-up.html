@@ -23,14 +23,9 @@
         <div class="card">
           <div class="card-header">
             <h3>Sign Up</h3>
-            <div class="d-flex justify-content-end social_icon">
-              <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-              <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
-              <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-            </div>
           </div>
           <div class="card-body">
-            <form>
+            <form action="./login.html" method="GET">
               <div class="input-group form-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text"
@@ -40,7 +35,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="username"
+                  placeholder="username" required
                 />
               </div>
               <div class="input-group form-group">
@@ -49,7 +44,7 @@
                     <i class="fa fa-envelope"></i
                   ></span>
                 </div>
-                <input type="email" class="form-control" placeholder="email" />
+                <input type="email" class="form-control" placeholder="email"  required/>
               </div>
               <div class="input-group form-group">
                 <div class="input-group-prepend">
@@ -61,7 +56,7 @@
                   type="password"
                   name="password"
                   class="form-control"
-                  placeholder="password"
+                  placeholder="password" required
                 />
               </div>
               <div class="input-group form-group">
@@ -74,7 +69,7 @@
                   type="password"
                   name="password"
                   class="form-control"
-                  placeholder="confirm password"
+                  placeholder="confirm password" required
                 />
               </div>
               <div class="row align-items-center remember">
@@ -86,6 +81,22 @@
                   value="Sign up"
                   class="btn float-right login_btn"
                 />
+              </div>
+              <div class="container">
+                <h6><span>Or</span></h6>
+                <button class="btn bg-blue">
+                  <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                  Sign Up with facebook
+                </button>
+                <button class="btn bg-orange" style="width: 198.86px">
+                  <span
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i></span
+                  >Sign Up with google
+                </button>
+                <button class="btn btn-primary" style="width: 198.86px">
+                  <span><i class="fa fa-twitter" aria-hidden="true"></i></span
+                  >Sign up with twitter
+                </button>
               </div>
             </form>
           </div>

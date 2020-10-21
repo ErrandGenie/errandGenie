@@ -9,7 +9,6 @@ body {
 .container {
   height: 100%;
   align-content: center;
-  margin-top: 10%;
 }
 
 .card {
@@ -19,30 +18,14 @@ body {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.social_icon span {
-  font-size: 60px;
-  margin-left: 10px;
-  color: #4788C7;
-}
-
-.social_icon span:hover {
-  color: white;
-  cursor: pointer;
-}
-
 .card-header h3 {
   color: white;
-}
-
-.social_icon {
-  position: absolute;
-  right: 20px;
-  top: -45px;
+  text-align: center;
 }
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #4788C7;
+  background-color: #4788c7;
   color: whitesmoke;
   border: 0 !important;
 }
@@ -65,7 +48,7 @@ input:focus {
 
 .login_btn {
   color: white;
-  background-color: #4788C7;
+  background-color: #4788c7;
   width: 100px;
 }
 
@@ -82,3 +65,51 @@ input:focus {
   margin-left: 4px;
 }
 
+.bg-blue {
+  background-color: #3b5998;
+  color: white;
+}
+
+.bg-orange {
+  background-color: orange;
+  color: white;
+}
+
+.btn {
+  justify-content: center;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.container {
+  margin: 60px auto;
+  justify-content: center;
+  width: 100%;
+}
+
+h6 {
+  overflow: hidden;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h6:before,
+h6:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h6:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h6:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
