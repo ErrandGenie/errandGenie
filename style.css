@@ -127,6 +127,11 @@ a.nav-link:hover {
   font-size: 1.2em;
   font-weight: 500;
 }
+/* .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 1.2s ease;
+} */
 
 .socials {
   margin-top: 15%;
