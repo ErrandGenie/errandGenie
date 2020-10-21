@@ -171,8 +171,8 @@ a.nav-link:hover {
 
   .socials {
     display: flex;
-    margin-left: 10%;
-    margin-top: 100%;
-    padding-top: 5%;
+    margin-left: 10vw;
+    margin-top: 100vw;
+    padding-top: 5vw;
   }
 }

@@ -15,9 +15,26 @@ body {
   height: 40rem;
 }
 
+.newBanner {
+  background: url(img/julian-hochgesang.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 30rem;
+}
+
 .message {
   padding: 20rem 5rem;
   color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.message2 {
+  padding: 10rem 5rem;
+  color: #4788C7;
   align-items: center;
   justify-content: center;
 }
@@ -72,15 +89,15 @@ a.nav-link:hover {
 }
 
 .body {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .body1 {
-    padding-top: 150px ;
+  padding-top: 150px;
 }
 
 .body2 {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 section {
   width: 100%;
@@ -89,6 +106,34 @@ section {
 .circle {
   font-size: 7rem;
 }
+
+#layer1 {
+  margin-top: -15%;
+  z-index: 1;
+  position: relative;
+}
+
+form {
+  background-color: rgb(221, 218, 218);
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+
 
 /* end of section */
 
@@ -108,4 +153,11 @@ footer a {
 footer .fab {
   font-size: 20px;
   padding: 20px;
+}
+
+
+@media screen and (max-width: 780px){
+    form{
+        width: 100%;
+    }
 }

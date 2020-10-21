@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="bannerContainer" style="width: 100%">
+      <div class="newBanner" style="width: 100%">
         <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
           <a class="navbar-brand" href="index.html"
             ><img src="img/Group 27.png" alt="logo"
@@ -62,133 +62,80 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
         </nav>
-        <div class="message">
-          <h4>A Message from our C.E.O</h4>
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum <br />
-            dolor sit, amet consectetur adipisicing elit.
-          </p>
-          <a href="#" class="btn btn-light btn-lg">Read More</a>
+        <div class="message2">
+          <h1>Contact Us</h1>
+          <h4>We'd love to hear from you!</h4>
         </div>
       </div>
     </header>
-    <section>
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <img
-              src="./img/undraw_Moving_twwf.svg"
-              alt="logistics movement"
-              class="card-img-top"
-            />
-          </div>
-          <div class="col-md-6 body1">
-            <h4 class="title">We help you move your logistics hassle-free</h4>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              accusamus iste sunt fugiat repellendus suscipit molestiae quo
-              veniam non consectetur! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ratione ex sint iure, quam id optio quaerat
-              labore assumenda dolorem mollitia culpa impedit et quasi amet
-              recusandae voluptatem debitis maxime accusantium.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <img
-              src="./img/undraw_shopping_app_flsj.svg"
-              alt="errands"
-              class="card-img-top"
-            />
-          </div>
-          <div class="col-md-6 body2">
-            <h4 class="title">We are always ready to help with your errands</h4>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              accusamus iste sunt fugiat repellendus suscipit molestiae quo
-              veniam non consectetur! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Minima ipsum rerum ipsam nulla repudiandae
-              cupiditate, quidem facere hic natus facilis officia alias
-              excepturi eveniet aliquam eligendi eos distinctio perferendis
-              debitis!
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-6">
-            <img
-              src="./img/undraw_On_the_way_re_swjt.svg"
-              alt="deliveries"
-              class="card-img-top"
-            />
-          </div>
-          <div class="col-md-6 body">
-            <h4 class="title">All your delivery services at your fingertips</h4>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              accusamus iste sunt fugiat repellendus suscipit molestiae quo
-              veniam non consectetur! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Molestias magnam culpa cum ut quibusdam
-              deserunt, praesentium ab dolorum laboriosam natus quos omnis
-              sapiente officia ipsum. Perferendis minus velit praesentium optio.
-            </p>
-          </div>
-        </div>
 
-        <div class="row justify-content-center text-center">
-          <div class="col-md-4">
-            <div class="circle">
-              <i class="fas fa-user-shield" style="color: #6c63ff"></i>
+    <section id="layer1">
+      <div class="container">
+        <form>
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="fname"
+                >First Name:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  placeholder="Enter First Name"
+                  name="fname"
+                />
+              </div>
             </div>
-            <div class="body">
-              <h4 class="title">Safety and Convenience</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                aperiam, similique, iusto quaerat sed accusamus aspernatur
-                voluptatum molestias, quos qui suscipit expedita? Culpa ducimus
-                aperiam ratione! Facere magni incidunt necessitatibus.
-              </p>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="lname"
+                >Last Name:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lname"
+                  placeholder="Enter Last Name"
+                  name="lname"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comment"
+                >Comment:</label
+              >
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="circle">
-              <i class="fas fa-money-bill-alt" style="color: #2ba137"></i>
-            </div>
-            <div class="body">
-              <h4 class="title">Affordability</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                exercitationem nobis omnis iste tempora optio at ut eligendi ex
-                magni unde veniam accusantium dolorum aliquid corporis,
-                necessitatibus impedit minus consequuntur.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="circle">
-              <i class="fas fa-stopwatch" style="color: #ffa200"></i>
-            </div>
-            <div class="body">
-              <h4 class="title">Time Bound</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consequatur quibusdam ratione accusamus voluptatum architecto et
-                sit minima sapiente quas reprehenderit! Cupiditate ullam
-                laudantium labore aliquam voluptatem, reiciendis assumenda
-                veritatis commodi.
-              </p>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
