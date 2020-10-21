@@ -34,6 +34,10 @@ body {
 .navbar .nav-item:hover .dropdown-menu {
   display: block;
 }
+.dropdown-menu a:hover {
+  color: gold !important;
+  text-decoration: underline;
+}
 
 .navbar-nav > li {
   padding-left: 30px;
@@ -140,11 +144,11 @@ a.nav-link:hover {
   font-size: 50px;
   border-radius: 50px;
 }
-.icons a{
+.icons a {
   color: black !important;
 }
-.icons a:hover{
-  color: #4788C7 !important;
+.icons a:hover {
+  color: #4788c7 !important;
 }
 
 .col-md-4,
@@ -171,6 +175,12 @@ a.nav-link:hover {
 section {
   width: 100%;
 }
+.col-md-4 .body {
+  padding-top: 0;
+}
+.col-md-4 .circle {
+  padding-top: 25%;
+}
 
 footer {
   color: #fff;
@@ -186,6 +196,12 @@ footer a {
 footer .fab {
   font-size: 20px;
   padding: 20px;
+}
+footer .col-md-4 {
+  margin-left: 10%;
+}
+footer .col-md-3 {
+  margin-left: 2%;
 }
 
 @media screen and (max-width: 780px) {
