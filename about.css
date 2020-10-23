@@ -91,6 +91,23 @@ a.nav-link:hover {
   margin-top: 80px;
 }
 
+.col-md-1,
+.col-md-8 {
+  margin-bottom: 40px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+  color: #4788c7;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
 .body {
   padding-top: 50px;
 }
@@ -117,18 +134,16 @@ section {
 }
 
 #layer1 {
-  margin-top: -15%;
+  margin-top: -7%;
   z-index: 1;
   position: relative;
 }
 
-form {
+.page {
   background-color: rgb(221, 218, 218);
   padding: 3%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  width: 60%;
-  margin: 0 auto;
 }
 .contact-form label {
   font-weight: 600;
