@@ -158,8 +158,9 @@ input:focus {
 
 .submit_btn:hover {
   background-color: #c7af47;
-  box-shadow: 1px 10px 1px  rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
+
 
 /* end of section */
 
