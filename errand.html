@@ -9,13 +9,12 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="about.css" />
-    <title>Contact us</title>
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="pages.css" />
+    <title>Errand Services</title>
   </head>
   <body>
     <header>
-      <div class="newBanner" style="width: 100%">
+      <div class="bannerContainer" style="width: 100%">
         <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
           <a class="navbar-brand" href="index.html"
             ><img src="img/Group 27.png" alt="logo"
@@ -36,7 +35,7 @@
             id="navbarNav"
           >
             <ul class="nav navbar-nav navbar-center">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="./index.html"
                   >Home <span class="sr-only">(current)</span></a
                 >
@@ -65,124 +64,59 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
         </nav>
-        <div class="message2">
-          <h1>Contact Us</h1>
-          <h4>We'd love to hear from you!</h4>
+        <div class="message">
+          <h1>Errands</h1>
+          <p>Make the list and we'll shop it!</p>
         </div>
       </div>
     </header>
 
-    <section id="layer1">
-      <div class="container page">
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <div class="contact-form">
-                <div class="form-group">
-                  <label class="control-label col-sm-4" for="fname"
-                    >First Name:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fname"
-                      placeholder="Enter First Name"
-                      name="fname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-4" for="lname"
-                    >Last Name:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lname"
-                      placeholder="Enter Last Name"
-                      name="lname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="email"
-                    >Email:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter email"
-                      name="email"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="comment"
-                    >Comment:</label
-                  >
-                  <div class="col-sm-10">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      id="comment"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-4 col-sm-10">
-                    <button type="submit" class="btn btn-default">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
+    <aside>Errand History</aside>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-3 blue box">
+            Total items
+            <h4>0</h4>
           </div>
-          <div class="col-md-6 enquiries">
-            <h4>General enquiries</h4>
-            <div class="address">
-              <div class="row">
-                <div class="col-md-1">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="col-md-8">
-                  <h6>Address</h6>
-                  PMB 1000, Ho-Volta Region
-                </div>
-              </div>
-            </div>
-            <div class="phone">
-              <div class="row">
-                <div class="col-md-1">
-                  <i class="fas fa-phone" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-8">
-                  <h6>Phone</h6>
-                  +233 200418826
-                </div>
-              </div>
-            </div>
-            <div class="mail">
-              <div class="row">
-                <div class="col-md-1"><i class="fas fa-envelope"></i></div>
-                <div class="col-md-10">
-                  <h6>Email</h6>
-                  errandgenie@gmail.com
-                </div>
-              </div>
-            </div>
+          <div class="col-md-3 green box">
+            Items worth
+            <h4>GHS0.00</h4>
+          </div>
+          <div class="col-md-3 yellow box">
+            Cost of Errand
+            <h4>GHS0.00</h4>
           </div>
         </div>
+        <form>
+          <div class="contact-form">
+            <div class="form-group">
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  placeholder="Add item"
+                  name="fname"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-10">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
