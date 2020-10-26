@@ -35,7 +35,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="username" required
+                  placeholder="username"
+                  required
                 />
               </div>
               <div class="input-group form-group">
@@ -44,7 +45,12 @@
                     <i class="fa fa-envelope"></i
                   ></span>
                 </div>
-                <input type="email" class="form-control" placeholder="email"  required/>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="email"
+                  required
+                />
               </div>
               <div class="input-group form-group">
                 <div class="input-group-prepend">
@@ -52,11 +58,17 @@
                     ><i class="fa fa-key"></i
                   ></span>
                 </div>
+                <span
+                  id="password-field"
+                  class="fa fa-fw fa-eye field-icon toggle-password position-absolute"
+                ></span>
                 <input
                   type="password"
                   name="password"
                   class="form-control"
-                  placeholder="password" required
+                  placeholder="password"
+                  id="password"
+                  required
                 />
               </div>
               <div class="input-group form-group">
@@ -65,12 +77,8 @@
                     ><i class="fa fa-lock"></i
                   ></span>
                 </div>
-                <input
-                  type="password"
-                  name="password"
-                  class="form-control"
-                  placeholder="confirm password" required
-                />
+                <input type="password" name="password" class="form-control"
+                placeholder="confirm password" required " />
               </div>
               <div class="row align-items-center remember">
                 <input type="checkbox" />Remember Me
@@ -108,5 +116,6 @@
         </div>
       </div>
     </div>
+    <script src="sign.js"></script>
   </body>
 </html>

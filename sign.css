@@ -113,3 +113,9 @@ h6:after {
   left: 0.5em;
   margin-right: -50%;
 }
+
+.field-icon {
+  right: 0;
+  z-index: 1;
+  margin-top: 10px;
+}
