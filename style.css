@@ -23,18 +23,16 @@
   padding-right: 30px;
 }
 .dropdown-menu a:hover {
-  color: gold !important;
+  background-color: rgb(240, 240, 240);
   text-decoration: underline;
 }
 
 .active > a {
   color: gold !important;
-  text-decoration: underline gold;
 }
 
 a.nav-link:hover {
   color: gold !important;
-  text-decoration: underline gold;
 }
 
 .info .btn {
@@ -160,6 +158,9 @@ a.nav-link:hover {
 
 .socials li {
   list-style: none;
+}
+.socials a:hover {
+  color: gold;
 }
 
 .circle {

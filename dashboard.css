@@ -35,7 +35,7 @@ body {
   display: block;
 }
 .dropdown-menu a:hover {
-  color: gold !important;
+  background-color: rgb(240, 240, 240);
   text-decoration: underline;
 }
 
@@ -193,6 +193,9 @@ section {
 .col-md-4 .circle {
   padding-top: 25%;
 }
+.social a:hover {
+  color: gold;
+}
 
 footer {
   color: #fff;
@@ -203,6 +206,10 @@ footer {
 
 footer a {
   color: white;
+}
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
 }
 
 footer .fab {
