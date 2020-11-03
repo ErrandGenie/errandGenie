@@ -44,13 +44,15 @@ body {
 }
 
 .active > a {
-  color: gold !important;
-  text-decoration: underline gold;
+  color: black !important;
+  background-color: #fff;
+  /* text-decoration: underline gold; */
 }
 
 a.nav-link:hover {
-  color: gold !important;
-  text-decoration: underline gold;
+  background-color: white !important;
+  color: black !important;
+  /* text-decoration: underline gold; */
 }
 
 #carouselExampleIndicators {
@@ -160,7 +162,7 @@ a.nav-link:hover {
   color: black !important;
 }
 .icons a:hover {
-  color:gold !important;
+  color: gold !important;
 }
 
 .col-md-4,
