@@ -54,7 +54,7 @@ a.nav-link:hover {
 }
 
 .my-dropdown-toggle::after {
-    content: none;
+  content: none;
 }
 
 #carouselExampleIndicators {
@@ -82,7 +82,7 @@ a.nav-link:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("./img/logisticsintruck.jpg");
+  background: url("../images/logisticsintruck.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
@@ -92,7 +92,7 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
-  background: url("./img/veggies.jpg");
+  background: url("../images/veggies.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
@@ -102,7 +102,7 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
-  background: url("./img/deliveryguy.jpg");
+  background: url("../images/deliveryguy.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
@@ -114,7 +114,7 @@ a.nav-link:hover {
 
 #carouselExampleIndicators .carousel-inner .carousel-item .info {
   position: absolute;
-  top: 30%;
+  top: 40%;
   transform: translateY(-50%);
   height: auto;
   width: 100%;
@@ -138,6 +138,23 @@ a.nav-link:hover {
   text-align: center;
   font-size: 1.2em;
   font-weight: 500;
+}
+
+.newBanner {
+  background: url(../images/julian-hochgesang.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 30rem;
+}
+
+.message2 {
+  padding: 10rem 5rem;
+  color: #4788c7;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-black {
@@ -164,7 +181,7 @@ a.nav-link:hover {
   color: black !important;
 }
 .icons a:hover {
-  color:gold !important;
+  color: #4788c7 !important;
 }
 
 .col-md-4,
@@ -185,8 +202,69 @@ a.nav-link:hover {
   width: 100%;
 }
 
+.cards .col-md-2 {
+  background-color: #4788c7;
+  margin: 10px;
+  height: 15rem;
+  padding: 0;
+  color: white;
+}
+
+.heading > h4:before,
+.heading > h4:after {
+  background-color: #4788c7;
+  content: "";
+  display: inline-block;
+  height: 1.5px;
+  position: relative;
+  vertical-align: middle;
+  width: 70%;
+}
+
+.heading > h4 {
+  overflow: hidden;
+  text-align: center;
+}
+
+.col-md-9 {
+  margin: 0 auto;
+}
+
+.heading > h4:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.heading > h4:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.headCard .col-md-2 {
+  margin: 20px;
+  padding: 20px;
+  height: 6rem;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 1px 10px 1px #bebebd;
+  border-radius: 5px;
+}
+
+.headCard {
+  margin-top: -50px;
+}
+
+.col-md-2 > hr {
+  background-color: gold;
+}
+
 .circle {
-  font-size: 7rem;
+  font-size: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #4788c7;
+  width: 40%;
+  margin: 30px auto;
 }
 section {
   width: 100%;
@@ -201,11 +279,58 @@ section {
   color: gold;
 }
 
+.convenience > h1 {
+  margin-top: 5rem;
+  color: white;
+  line-height: 70px;
+}
+
+.convenience {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/manifest.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 20rem;
+  margin: 10rem 0;
+}
+
+#layer1 {
+  margin-top: -7%;
+  z-index: 1;
+  position: relative;
+}
+
+.page {
+  background-color: rgb(221, 218, 218);
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+
 footer {
   color: #fff;
-  background-color: #000;
+  background-color: #7ba7e9;
   margin-top: 40px;
   width: 100%;
+  height: 30rem;
+}
+
+.container-fluid {
+  margin-top: 40px;
 }
 
 footer a {
@@ -227,7 +352,7 @@ footer .col-md-3 {
   margin-left: 2%;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
   .navbar {
     padding: 0;
   }

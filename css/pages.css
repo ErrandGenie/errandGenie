@@ -1,0 +1,153 @@
+/* side nav */
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7ba7e9;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidenav {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.sidenav img {
+  width: 160px;
+  height: 80px;
+}
+
+.sidenav ul {
+  list-style: none;
+  line-height: 3rem;
+}
+
+.navbar-brand {
+  margin-bottom: 5rem;
+}
+
+.user {
+  margin-top: 5rem;
+}
+
+.circle {
+  background-color: rgb(146, 150, 163);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.dropdown-toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+/* side nav */
+
+/* Main */
+.main {
+  width: 80%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  position: absolute;
+}
+
+.jumbotron h1 {
+  color: #4788c7;
+}
+
+.jumbo-img img {
+  width: 20rem;
+}
+
+.jumbo-img {
+  margin-top: -10rem;
+}
+
+.cards {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.col-xs-6 {
+  padding: 20px;
+}
+.icon {
+  width: 3rem;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.774);
+}
+.body {
+  text-align: center;
+  width: 15rem;
+  font-weight: 30px;
+  color: whitesmoke;
+}
+
+iframe {
+  width: 20rem;
+  height: 20rem;
+}
+
+.chart_div{
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+}
+
+.inline span::after{
+    margin-left: 10px;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f105";
+    
+}
+
+.inline span{
+    margin-left: 30%;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(225, 226, 228);
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.box{
+    background-color: rgb(225, 226, 228);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box i{
+    color: #95c7fa;
+}
+
+/* Main */
+
+/* Mobile View */
+
+/* Mobile View */
