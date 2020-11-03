@@ -25,7 +25,8 @@ body {
 }
 
 .logistics-movement {
-  background: url(img/cars-parked.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/cars-parked.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -189,7 +190,10 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: none;
+}
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
 }
 
 footer .fab {
@@ -206,5 +210,21 @@ footer .col-md-3 {
 @media screen and (max-width: 780px) {
   section .card {
     width: 100% !important;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar ul {
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  .icons {
+    margin-top: 90%;
+    width: 80%;
+  }
+
+  .col-md-6 h1 {
+    padding-top: 0;
   }
 }
