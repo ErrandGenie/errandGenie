@@ -21,7 +21,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30rem;
+  height: 100%;
 }
 
 .logistics-movement {
@@ -99,6 +99,9 @@ a.nav-link:hover {
   text-decoration: underline gold;
 }
 
+.my-dropdown-toggle::after {
+    content: none;
+}
 /* end of header */
 
 /* Section */

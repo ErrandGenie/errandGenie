@@ -10,330 +10,192 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="pages.css" />
-    <title>Delivery Services</title>
+    <title>Logistics Movement</title>
   </head>
   <body>
-    <header>
-      <div class="bannerDelivery" style="width: 100%">
-        <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
-          <a class="navbar-brand" href="index.html"
-            ><img src="img/Group 27.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse float-right text-right pr-0"
-            id="navbarNav"
-          >
-            <ul class="nav navbar-nav navbar-center">
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard.html"
-                  >Home <span class="sr-only">(current)</span></a
+    <header class="bannerDelivery" style="width: 100%">
+      <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/Group 27.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse float-right text-right pr-0"
+          id="navbarNav"
+        >
+          <ul class="nav navbar-nav navbar-center">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Logistics Movement</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="errand.html">Errand Services</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="delivery.html"
+                  >Delivery Services</a
                 >
-              </li>
-              <li class="nav-item active dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Logistics Movement</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="errand.html"
-                    >Errand Services</a
-                  >
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="delivery.html"
-                    >Delivery Services</a
-                  >
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="message">
-          <h1>Delivery</h1>
-          <p>Door-to-door at it's best</p>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle my-dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="background-color: transparent; border: none;">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">Log Out</a>
+                
+              </div>
+            </li>
+          </ul>
         </div>
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="myInput"
-            onkeyup="myFunction()"
-          />
-          <button class="btn btn-dark my-2 my-sm-0" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
+      </nav>
+      <div class="message">
+        <h1>Delivery</h1>
+        <p>Door to door at it's best!</p>
       </div>
     </header>
 
     <section>
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/alexey-mak-sMZLg77Z2Dk-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>McDonald's</h4></a>
-                <h6>Ho, Volta Region</h6>
+      <div class="container page">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="contact-form">
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="fname"
+                    >First Name:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      placeholder="Enter First Name"
+                      name="fname"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="lname"
+                    >Last Name:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Enter Last Name"
+                      name="lname"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email"
+                    >Email:</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter email"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="comment"
+                    >Message:</label
+                  >
+                  <div class="col-sm-10">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      id="comment"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-4 col-sm-10">
+                    <button type="submit" class="btn btn-default">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 enquiries">
+            <h4>General enquiries</h4>
+            <div class="address">
+              <div class="row">
+                <div class="col-md-1">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="col-md-8">
+                  <h6>Address</h6>
+                  PMB 1000, Ho-Volta Region
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/claudio-schwarz-purzlbaum-3DJQ5Ja1sxQ-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Plaggio</h4></a>
-                <h6>Ho, Volta Region</h6>
+            <div class="phone">
+              <div class="row">
+                <div class="col-md-1">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-8">
+                  <h6>Phone</h6>
+                  +233 200418826
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/jen-theodore-zL2FTj0gDZo-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Mickey-Lu</h4></a>
-                <h6>Dansoman, Greater Accra</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/lse-library-ddNkplRhzv0-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Men's League</h4></a>
-                <h6>Ho, Volta Region</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/lse-library-Mx1sghCziHo-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>National Union</h4></a>
-                <h6>Ho, Volta Region</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/nicolas-peyrol-NAhITPrc0as-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Bugatti</h4></a>
-                <h6>East Legon, Greater Accra</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/rolliz.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Rolliz</h4></a>
-                <h6>Ho Poly, Volta Region</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/sky-plus-logo.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Sky Plus Hotel Restaurant</h4></a>
-                <h6>Ho, Volta Region</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/slidebean-hYN111MD_-M-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>SlideBean</h4></a>
-                <h6>East Legon, Greater Accra</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/thomas-allsop-GcJn2VB9MkM-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Maserati</h4></a>
-                <h6>Accra, Greater Accra</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/WhatsApp Image 2020-10-13 at 12.13.06 AM.jpeg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>Express Delivery</h4></a>
-                <h6>Ho, Volta Region</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="
-                width: 20rem;
-                height: 25rem;
-                background-color: #fff !important;
-              "
-            >
-              <img
-                class="card-img-top"
-                src="img/partners/y-cai-Ch_QF4IocbU-unsplash.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <a href="#"><h4>StarBucks</h4></a>
-                <h6>Airport, Greater Accra</h6>
+            <div class="mail">
+              <div class="row">
+                <div class="col-md-1"><i class="fas fa-envelope"></i></div>
+                <div class="col-md-10">
+                  <h6>Email</h6>
+                  errandgenie@gmail.com
+                </div>
               </div>
             </div>
           </div>
@@ -419,7 +281,6 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    <script src="delivery.js"></script>
     <script
       src="https://kit.fontawesome.com/e1442cffb3.js"
       crossorigin="anonymous"

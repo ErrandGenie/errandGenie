@@ -55,6 +55,10 @@ a.nav-link:hover {
   /* text-decoration: underline gold; */
 }
 
+.my-dropdown-toggle::after {
+    content: none;
+}
+
 #carouselExampleIndicators {
   position: relative;
   height: 100vh;
