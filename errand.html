@@ -71,6 +71,27 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">Contact Us</a>
               </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle my-dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i>
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                  style="background-color: transparent; border: none"
+                >
+                  <a class="dropdown-item" href="#">Account</a>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -99,7 +120,7 @@
         </div>
         <form>
           <div class="contact-form">
-            <div class="form-group">
+            <div class="form-group" id="form">
               <div class="col-sm-10">
                 <input
                   type="text"
@@ -110,15 +131,13 @@
                 />
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-sm-offset-4 col-sm-10">
-                <button type="submit" class="btn btn-primary">
-                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
           </div>
         </form>
+        <div class="col-sm-offset-4 col-sm-10">
+          <button type="submit" class="btn btn-primary" onclick="addInput()">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -200,6 +219,18 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <script>
+      function addInput() {
+        var form = document.getElementById("form");
+        var div = document.createElement("div");
+        var input = document.createElement("input");
+        input.placeholder = "Add item";
+        input.classList.add("form-control");
+        div.classList.add("col-sm-10");
+        div.appendChild(input);
+        form.appendChild(div);
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/e1442cffb3.js"
       crossorigin="anonymous"
