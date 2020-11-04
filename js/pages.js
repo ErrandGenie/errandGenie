@@ -10,3 +10,6 @@ toggler.addEventListener("click", function () {
   }
 });
 
+function myFunction(x) {
+  x.classList.toggle("change");
+}
