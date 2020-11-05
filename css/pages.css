@@ -140,7 +140,7 @@ li a {
   color: whitesmoke;
 }
 
-iframe {
+.col-md-4 iframe {
   width: 20rem;
   height: 20rem;
   margin-top: 2rem;
@@ -180,7 +180,47 @@ iframe {
 
 .box i {
   color: #95c7fa;
+
+  }
+
+  /* Logistics Movement Form */
+
+.card {
+  margin-top: -40rem;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
+
+.card-header h6 {
+  color: white;
+  text-align: center;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #4788c7;
+  color: whitesmoke;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.proceed_btn {
+  color: white;
+  background-color: #4788c7;
+  width: 100px;
+  align-self: center;
+}
+
+.proceed_btn:hover {
+  color: black;
+  background-color: white;
+}
+/* End of Logistics Form */
 
 /* Main */
 
