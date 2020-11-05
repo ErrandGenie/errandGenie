@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <title>Movement</title>
+  </head>
+  <body>
+    <!-- Aside Bar -->
+    <div class="sidenav">
+      <div class="mytoggler" onclick="myFunction(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="navbar-brand">
+          <img src="../images/Group 27.png" alt="logo" />
+        </div>
+        <!--End of navbar brand-->
+
+        <ul>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="fas fa-th-large"></i></div>
+                <div class="col-md-10">Dashboard</div>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="fas fa-truck"></i></div>
+                <div class="col-md-10">Movement</div>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="fas fa-shopping-cart"></i></div>
+                <div class="col-md-10">Errands</div>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="fas fa-people-carry"></i></div>
+                <div class="col-md-10">Delivery</div>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="far fa-chart-bar"></i></div>
+                <div class="col-md-10">Transaction</div>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <div class="row flex-nowrap">
+                <div class="col-xs-1"><i class="fas fa-info-circle"></i></div>
+                <div class="col-md-10">Support</div>
+              </div></a
+            >
+          </li>
+        </ul>
+        <div class="user">
+          <div class="dropdown-toggle">
+            <div class="circle">
+              <i class="fas fa-user"></i>
+            </div>
+            <text>User</text>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="row flex-nowrap">
+                    <div class="col-xs-1"><i class="fas fa-bell"></i></div>
+                    <div class="col-md-10">Notifications</div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div class="row flex-nowrap">
+                    <div class="col-xs-1"><i class="fas fa-cog"></i></div>
+                    <div class="col-md-10">Settings</div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <div class="row flex-nowrap">
+                    <div class="col-xs-1">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <div class="col-md-10">Log Out</div>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--End of menu div-->
+        </div>
+        <!--End of user div-->
+      </div>
+      <!--End of mytoggler-->
+    </div>
+    <!--End of sidenav-->
+    <!-- Aside Bar -->
+
+    <!-- Main Body -->
+    <main>
+      <div class="container main">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- Heading -->
+            <h3>Dashboard</h3>
+            <hr>
+            <!-- End of Heading  -->
+            <!-- Jumbotron -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Welcome User !</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing <br />elit.
+                  Sapiente, deleniti.
+                </p>
+              </div>
+              <!--End of jumbotron container-->
+            </div>
+            <!--End of Jumbotron-->
+            <!-- Jumbotron Image -->
+            <div class="jumbo-img float-right">
+              <img src="../images/undraw_Mobile_app_p3ts.svg" alt="Welcome" />
+            </div>
+            <!--End of jumbotron image-->
+            <div class="row cards">
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(1, 100, 100)">
+                    <i class="fas fa-tags"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: teal">
+                    <p>Total Orders</p>
+
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--end of first col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(214, 61, 5)">
+                    <i class="fas fa-truck-loading"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: orangered">
+                    <p>Total Movement</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--end of second col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(211, 141, 12)">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: orange">
+                    <p>Total Errands</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--End of third col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(78, 4, 253)">
+                    <i class="fas fa-biking"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div
+                    class="body"
+                    style="background-color: rgb(137, 105, 252)"
+                  >
+                    <p>Total Delivery</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--End of col-xs-6-->
+            </div>
+            <!--End of cards div-->
+
+            <!-- Recent Task -->
+            <div class="inline">
+            <h4>Recent Tasks</h4>
+              <span>View All</span>
+            </div>
+            <div class="box">
+              <h6>No Recent Task Task</h6>
+              <span><i class="fas fa-clock"></i> 11/3/2020 2:56 PM</span>
+            </div>
+            <!--End of box div -->
+          </div>
+          <!--End of col-md-8-->
+
+          <!-- Second Column -->
+          <div class="col-md-4">
+            <div class="better">
+            <!-- Calender -->
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=v9c0f7n1nojmhntus0ms9oqs18%40group.calendar.google.com&ctz=Africa%2FAccra"
+              style="border: 0"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+            <!-- New Tasks -->
+            <div class="inline">
+              <h4>Your Tasks</h4>
+              <span>View All</span>
+            </div>
+            <!--End of inline div-->
+            <div class="box">
+              <h6>You don't have any Task</h6>
+              <span><i class="fas fa-clock"></i> 11/3/2020 2:56 PM</span>
+            </div>
+            <!--End of box div-->
+
+            <!--Div that will hold the pie chart-->
+            <div id="chart_div" style="margin-top: 0"></div>
+            </div> <!--End of better-->
+          </div>
+          <!--End of col-md-4-->
+        </div>
+        <!--End of row -->
+      </div>
+      <!--End of container main-->
+    </main>
+
+    <!-- Main Body -->
+
+    <script src="../js/pages.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script>
+      // Load the Visualization API and the corechart package.
+      google.charts.load("current", { packages: ["corechart"] });
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Task");
+        data.addColumn("number", "Total");
+        data.addRows([
+          ["Logistic Movement", 3],
+          ["Errands", 1],
+          ["Deliveries", 1],
+        ]);
+
+        // Set chart options
+        var options = {
+          title: "Statistics on Transactions During the last Month ",
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(
+          document.getElementById("chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/e1442cffb3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

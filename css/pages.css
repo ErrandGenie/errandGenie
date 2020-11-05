@@ -57,7 +57,17 @@ li a {
 .dropdown-toggle {
   text-align: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
+
+.menu{
+  display: none;
+}
+
+.user:hover .menu{
+  display: block;
+}
+
 
 /* side nav */
 
