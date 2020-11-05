@@ -43,6 +43,23 @@ li a {
 }
 
 .user {
+  list-style-type: none;
+}
+.user > ul > li {
+  display: inline-block;
+}
+.user-drop-down {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+.user ul > li:hover .user-drop-down {
+  display: block;
+}
+/* .user {
   margin-top: 5rem;
 }
 
@@ -63,7 +80,7 @@ li a {
 
 .menu {
   display: none;
-}
+} */
 
 /* side nav */
 
