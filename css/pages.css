@@ -26,11 +26,13 @@
 .sidenav img {
   width: 160px;
   height: 80px;
+  margin-bottom: 5rem;
 }
 
 .sidenav ul {
   list-style: none;
   line-height: 3rem;
+  padding-left: 30px;
 }
 
 li a {
@@ -38,12 +40,8 @@ li a {
   text-decoration: none;
 }
 
-.navbar-brand {
-  margin-bottom: 5rem;
-}
-
 .user {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .circle {
@@ -61,10 +59,6 @@ li a {
   margin-bottom: 20px;
 }
 
-.menu {
-  display: none;
-}
-
 /* side nav */
 
 /* Hamburger  Animation */
@@ -75,7 +69,7 @@ li a {
   background-color: #fff;
   width: 25px;
   height: 2px;
-  margin: 5px;
+  margin: 5px 10px;
   display: none;
   cursor: pointer;
 }
