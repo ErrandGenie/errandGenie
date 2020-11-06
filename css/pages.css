@@ -105,7 +105,7 @@ li a {
 .jumbo-img {
   margin-top: -10rem;
 }
-
+/* delivery form */
 .delivery {
   background-color: rgb(240, 238, 238);
   height: auto;
@@ -120,8 +120,8 @@ li a {
   width: 7rem;
 }
 
-button> i {
-  padding-right: 10px
+button > i {
+  padding-right: 10px;
 }
 
 .cards {
