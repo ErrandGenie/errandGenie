@@ -1,0 +1,230 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* header */
+.bannerContainer {
+  background: url(../images/ayo-ogunseinde.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 40rem;
+}
+
+.newBanner {
+  background: url(../images/julian-hochgesang.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 30rem;
+}
+
+.message {
+  padding: 20rem 5rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.message2 {
+  padding: 10rem 5rem;
+  color: #4788c7;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar a img {
+  width: 160px;
+  height: 80px;
+}
+
+.navbar ul {
+  margin-left: 50%;
+}
+
+.navbar .nav-item .dropdown-menu {
+  display: none;
+}
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav > li {
+  padding-left: 30px;
+}
+
+.active > a {
+  background-color: white !important;
+  color: black !important;
+}
+
+a.nav-link:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* end of header */
+
+/* Section */
+.col-md-4,
+.col-md-6 {
+  margin-top: 80px;
+}
+
+.col-md-1,
+.col-md-8 {
+  margin-bottom: 40px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+  color: #4788c7;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.body {
+  padding-top: 50px;
+}
+
+.body1 {
+  padding-top: 150px;
+}
+
+.body2 {
+  padding-top: 200px;
+}
+section {
+  width: 100%;
+}
+
+.circle {
+  font-size: 7rem;
+}
+.col-md-4 .body {
+  padding-top: 0;
+}
+.col-md-4 .circle {
+  padding-top: 25%;
+}
+
+#layer1 {
+  margin-top: -7%;
+  z-index: 1;
+  position: relative;
+}
+
+.page {
+  background-color: rgb(221, 218, 218);
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+
+/* end of section */
+
+/* footer */
+
+footer {
+  color: #fff;
+  background-color: #000;
+  margin-top: 40px;
+  width: 100%;
+}
+
+footer {
+  color: #fff;
+  background-color: #7ba7e9;
+  margin-top: 40px;
+  width: 100%;
+  height: 20rem;
+}
+.container-fluid {
+  margin-top: 20px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #343a40;
+  text-decoration: underline;
+}
+footer .fab {
+  font-size: 20px;
+  padding: 20px;
+}
+footer .fab:hover {
+  color: #343a40;
+}
+footer .col-md-4 {
+  margin-left: 10%;
+}
+footer .col-md-3 {
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 780px) {
+  .body {
+    padding-top: 50px;
+  }
+
+  .body1 {
+    padding-top: 0;
+  }
+
+  .body2 {
+    padding-top: 0;
+  }
+  .col-md-6 {
+    margin: 0;
+  }
+  .row {
+    margin-top: 50px;
+  }
+
+  form {
+    width: 100%;
+  }
+  /* footer .col-md-4 {
+    margin-left: 10%;
+  }
+  footer .col-md-3 {
+    margin-left: 2%;
+  } */
+}
