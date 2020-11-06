@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/pages.css" />
-    <title>Delivery</title>
+    <title>Market Shopping</title>
   </head>
   <body>
     <!-- Aside Bar -->
@@ -20,7 +20,9 @@
         <div class="line2"></div>
         <div class="line3"></div>
         <div class="navbar-brand">
-          <img src="../images/Group 27.png" alt="logo" />
+          <a href="../index.html"
+            ><img src="../images/Group 27.png" alt="logo"
+          /></a>
         </div>
         <!--End of navbar brand-->
 
@@ -127,86 +129,56 @@
         <div class="row">
           <div class="col-md-8">
             <!-- Heading -->
-            <h3>Delivery</h3>
+            <h3>Market Shopping</h3>
             <hr />
             <!-- End of Heading  -->
             <div class="delivery">
               <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="pick-up-location">Pick-up Location</label>
-                    <span
-                      id="password-field"
-                      class="fas fa-map-marker-alt field-icon toggle-password position-absolute"
-                    ></span>
-                    <input
-                      type="location"
-                      class="form-control"
-                      id="pick-up-location"
-                      placeholder="Pick-up location"
-                    />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="time">Pick-up Time</label>
-                    <input
-                      type="datetime-local"
-                      class="form-control"
-                      id="time"
-                    />
-                  </div>
+                <div class="form-group">
+                  <label for="location">Town/City</label>
+                  <select class="form-control" id="location">
+                    <option>Ho</option>
+                    <option>Accra</option>
+                    <option>Kumasi</option>
+                  </select>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-9 address">
-                    <label for="inputAddress">Drop-off Location(s)</label>
-                    <span
-                      id="password-field"
-                      class="fas fa-map-marker-alt field-icon toggle-password position-absolute"
-                    ></span>
+                <div class="form-group">
+                  <label for="select-errand">Preferred Mall or Shop</label>
+                  <select class="form-control" id="select errand">
+                    <option>Ho Central Market</option>
+                    <option>Stadium Gate Shopping Centre</option>
+                    <option>Melcom</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-9">
+                    <label for="Item List">Item List</label>
                     <input
                       type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      placeholder="Sakaman, Blue-Lagoon Street"
+                      class="form-control col-md-6"
+                      id="fname"
+                      placeholder="Add item"
+                      name="fname"
                     />
                   </div>
-                  <div class="form-group col-md-3">
-                    <button
-                      class="btn btn-primary"
-                      type="button"
-                      onclick="newInput()"
-                    >
-                      <i class="fas fa-plus"></i>Location
+                  <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-primary btn-sm">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
                     </button>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="description">Notes and Comments</label>
-                    <textarea
-                      class="form-control"
-                      id="description"
-                      rows="3"
-                      placeholder="Additional notes and comments"
-                    ></textarea>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="file">Add a file</label>
-                    <input type="file" class="form-control-file" id="File" />
-                  </div>
-                </div>
                 <div class="form-group">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="gridCheck"
-                    />
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
+                  <label for="instructions">Instructions</label>
+                  <textarea
+                    class="form-control"
+                    name=""
+                    id=""
+                    cols="10"
+                    rows="7"
+                  ></textarea>
+                  <small class="form-text text-muted">Tell us what to do</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Proceed</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
             <!--End of background div-->
