@@ -60,14 +60,13 @@ li a {
   cursor: pointer;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
-.user:hover .menu{
+.user:hover .menu {
   display: block;
 }
-
 
 /* side nav */
 
@@ -105,6 +104,24 @@ li a {
 
 .jumbo-img {
   margin-top: -10rem;
+}
+
+.delivery {
+  background-color: rgb(240, 238, 238);
+  height: auto;
+  padding: 3rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+.form-group button {
+  color: white;
+  margin-top: 30px;
+  width: 7rem;
+}
+
+button> i {
+  padding-right: 10px
 }
 
 .cards {
@@ -180,10 +197,9 @@ li a {
 
 .box i {
   color: #95c7fa;
+}
 
-  }
-
-  /* Logistics Movement Form */
+/* Logistics Movement Form */
 
 .card {
   margin-top: -40rem;
@@ -207,6 +223,12 @@ li a {
 input:focus {
   outline: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
+}
+
+.field-icon {
+  right: 20px;
+  color: grey;
+  margin-top: 40px;
 }
 
 .proceed_btn {
