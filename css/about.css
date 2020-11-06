@@ -182,12 +182,15 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: gold;
+  color: #343a40;
   text-decoration: underline;
 }
 footer .fab {
   font-size: 20px;
   padding: 20px;
+}
+footer .fab:hover {
+  color: #343a40;
 }
 footer .col-md-4 {
   margin-left: 10%;
