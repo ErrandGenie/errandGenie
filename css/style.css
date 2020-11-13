@@ -87,7 +87,6 @@ a.nav-link:hover {
   background: url("../images/logisticsintruck.jpg");
   background-size: 100% 100%;
   background-position: center;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,7 +96,6 @@ a.nav-link:hover {
   background: url("../images/veggies.jpg");
   background-size: 100% 100%;
   background-position: center;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,7 +105,6 @@ a.nav-link:hover {
   background: url("../images/deliveryguy.jpg");
   background-size: 100% 100%;
   background-position: center;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
