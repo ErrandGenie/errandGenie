@@ -141,10 +141,10 @@ a.nav-link:hover {
 
 .newBanner {
   background: url(../images/julian-hochgesang.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover center fixed;
-  -moz-background-size: cover center fixed;
-  -o-background-size: cover center fixed;
-  background-size: cover center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: relative;
   height: 30rem;
   background-color: rgba(10, 10, 10, 0.342);
@@ -345,9 +345,6 @@ footer .fab {
 }
 footer .fab:hover {
   color: #343a40;
-}
-.social {
-  padding-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
