@@ -349,6 +349,9 @@ footer .fab {
 footer .fab:hover {
   color: #343a40;
 }
+.social {
+  padding-top: 40px;
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
