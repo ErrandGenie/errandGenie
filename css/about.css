@@ -90,6 +90,10 @@ a.nav-link:hover {
   margin-top: 80px;
 }
 
+.col-md-6 > p {
+  font-size: 1.2rem;
+}
+
 .col-md-1,
 .col-md-8 {
   margin-bottom: 40px;
@@ -109,6 +113,10 @@ a.nav-link:hover {
 
 .body {
   padding-top: 50px;
+}
+
+.body > p {
+  font-size: 1.1rem;
 }
 
 .body1 {
