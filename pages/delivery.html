@@ -208,8 +208,58 @@
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Proceed</button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#modalLoginAvatar"
+                >
+                  Proceed
+                </button>
               </form>
+              <!--Modal: Login with Avatar Form-->
+              <div
+                class="modal fade"
+                id="modalLoginAvatar"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog cascading-modal modal-avatar modal-sm"
+                  role="document"
+                >
+                  <!--Content-->
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <img src="../images/etty-fidele-6UWqw25wfLI-unsplash.png"
+                      alt="avatar" class="rounded-circle img-responsive"
+                      width="100%"" />
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body text-center mb-1">
+                      <h5 class="mt-1 mb-2">Genie: Seth Megbetor</h5>
+
+                      <div class="md-form ml-0 mr-0">
+                        <h5 class="mt-1 mb-2">Pick-up Locations:</h5>
+                        <p>Trafalgar Taxi Rank, Ho Municipal</p>
+                        <p>Date: 11/21/2020</p>
+
+                        <h5 class="mt-1 mb-2">Drop-off Locations:</h5>
+                        <p>Poly Junction, Ho Municipal</p>
+                        <p>Agbenorxevi, Ho Municipal</p>
+
+                        <h5 class="mt-1 mb-2">Charge</h5>
+                        <p>GHS 20.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/.Content-->
+                </div>
+              </div>
+              <!--Modal: Login with Avatar Form-->
             </div>
             <!--End of background div-->
           </div>
