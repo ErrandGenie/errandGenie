@@ -85,13 +85,13 @@ li a {
 /* End of Hamburger Animation  */
 
 /* Main */
+
 .main {
-  width: 80%;
   height: 100%;
   top: 0;
-  right: 0;
+  margin: 0 auto;
   padding-top: 20px;
-  position: absolute;
+  float: right;
 }
 
 .jumbotron h1 {
@@ -244,10 +244,19 @@ input:focus {
 }
 /* End of Logistics Form */
 
+/* transactions */
+
 /* Main */
 
 /* Mobile View */
 @media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 20px;
+  }
   .col-md-10,
   .col-md-4,
   .sidenav img,
