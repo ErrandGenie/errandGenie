@@ -94,6 +94,11 @@ li a {
   float: right;
 }
 
+.rounded-circle img {
+  height: 40px !important;
+  widows: 40px !important;
+}
+
 .jumbotron h1 {
   color: #4788c7;
 }
