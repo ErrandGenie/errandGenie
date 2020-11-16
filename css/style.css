@@ -325,7 +325,7 @@ footer {
   color: #fff;
   background-color: #7ba7e9;
   margin-top: 2rem;
-  height: 14.5rem;
+  height: 15rem;
 }
 .footer-all {
   background-color: #7ba7e9;
@@ -342,7 +342,7 @@ footer a {
   margin-bottom: 0;
 }
 footer .row {
-  margin-left: 6rem;
+  margin-left: 3rem;
 }
 footer a:hover {
   color: #343a40;
@@ -350,7 +350,7 @@ footer a:hover {
 }
 .social {
   text-align: left;
-  margin-left: 6rem;
+  margin-left: 3rem;
   margin-bottom: 0;
 }
 .footer-copyright {
