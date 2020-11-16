@@ -374,4 +374,13 @@ footer .fab:hover {
     margin-top: 0;
     padding-top: 0;
   }
+
+  .layer1 {
+    display: none;
+  }
+
+  .circle {
+    width: 20%;
+    border-radius: 50%;
+  }
 }
