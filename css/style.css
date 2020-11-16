@@ -81,6 +81,7 @@ a.nav-link:hover {
   z-index: 1;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item {
+  background: url(../images/logisticsintruck.jpg) no-repeat center center fixed;
   position: relative;
   height: 100%;
   width: 100%;
@@ -92,6 +93,7 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+  background: url(../images/veggies.jpg) no-repeat center center fixed;
   background-size: 100% 100%;
   background-position: center;
   -webkit-background-size: cover;
@@ -100,6 +102,7 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+  background: url(../images/deliveryguy.jpg) no-repeat center center fixed;
   background-size: 100% 100%;
   background-position: center;
   -webkit-background-size: cover;
