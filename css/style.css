@@ -324,9 +324,8 @@ section {
 footer {
   color: #fff;
   background-color: #7ba7e9;
-  margin-top: 70px;
-  width: 100%;
-  height: 20rem;
+  margin-top: 2rem;
+  height: 14.5rem;
 }
 .footer-all {
   background-color: #7ba7e9;
@@ -335,9 +334,28 @@ footer {
 footer a {
   color: white;
 }
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+footer .row {
+  margin-left: 6rem;
+}
 footer a:hover {
   color: #343a40;
   text-decoration: underline;
+}
+.social {
+  text-align: left;
+  margin-left: 6rem;
+  margin-bottom: 0;
+}
+.footer-copyright {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 footer .fab {
   font-size: 20px;
@@ -382,5 +400,8 @@ footer .fab:hover {
   .circle {
     width: 20%;
     border-radius: 50%;
+  }
+  .social {
+    margin-left: 4rem;
   }
 }
