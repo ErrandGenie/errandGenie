@@ -1,7 +1,6 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 .carousel {
@@ -17,6 +16,7 @@ body {
 .nav-link {
   color: white !important;
   text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .navbar a img {
@@ -36,7 +36,8 @@ body {
 }
 .dropdown-menu a:hover {
   background-color: rgb(240, 240, 240);
-  text-decoration: underline;
+  text-decoration: underline orange;
+  transition: 0.2s ease-in;
 }
 
 .navbar-nav > li {
@@ -44,15 +45,14 @@ body {
 }
 
 .active > a {
-  color: black !important;
-  background-color: #fff;
-  /* text-decoration: underline gold; */
+  color: white !important;
+  font-weight: 900;
 }
 
 a.nav-link:hover {
-  background-color: white !important;
-  color: black !important;
-  /* text-decoration: underline gold; */
+  color: white !important;
+  text-decoration: underline orange;
+  transition: 0.2s ease-in;
 }
 
 .my-dropdown-toggle::after {
@@ -84,7 +84,6 @@ a.nav-link:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("../images/logisticsintruck.jpg");
   background-size: 100% 100%;
   background-position: center;
   -webkit-background-size: cover;
@@ -93,7 +92,6 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
-  background: url("../images/veggies.jpg");
   background-size: 100% 100%;
   background-position: center;
   -webkit-background-size: cover;
@@ -102,7 +100,6 @@ a.nav-link:hover {
   background-size: cover;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
-  background: url("../images/deliveryguy.jpg");
   background-size: 100% 100%;
   background-position: center;
   -webkit-background-size: cover;
@@ -140,7 +137,8 @@ a.nav-link:hover {
 }
 
 .newBanner {
-  background: url(../images/julian-hochgesang.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/julian-hochgesang.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -152,7 +150,7 @@ a.nav-link:hover {
 
 .message2 {
   padding: 10rem 5rem;
-  color: #4788c7;
+  color: #fff;
   align-items: center;
   justify-content: center;
 }
@@ -214,6 +212,10 @@ a.nav-link:hover {
   padding: 0;
   color: white;
 }
+.cards {
+  margin: 0;
+  padding: 0;
+}
 
 .heading > h4:before,
 .heading > h4:after {
@@ -257,10 +259,12 @@ a.nav-link:hover {
 
 .headCard {
   margin-top: -50px;
+  font-size: 1rem;
 }
 
 .col-md-2 > hr {
-  background-color: gold;
+  background-color: #4788c7;
+  height: 1px;
 }
 
 .circle {
@@ -307,8 +311,10 @@ section {
 .page {
   background-color: rgb(221, 218, 218);
   padding: 3%;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .contact-form label {
   font-weight: 600;
@@ -334,6 +340,9 @@ footer {
 footer a {
   color: white;
 }
+.footer-row {
+  padding-left: 5rem;
+}
 .footer-col-1,
 .footer-col-2,
 .footer-col-3 {
@@ -341,16 +350,14 @@ footer a {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-footer .row {
-  margin-left: 3rem;
-}
+
 footer a:hover {
   color: #343a40;
   text-decoration: underline;
 }
 .social {
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-bottom: 0;
 }
 .footer-copyright {
