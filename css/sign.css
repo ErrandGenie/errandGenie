@@ -81,6 +81,10 @@ input:focus {
   margin-top: 15px;
 }
 
+.back-btn {
+  font-size: 1.2rem;
+}
+
 .container {
   margin: 60px auto;
   justify-content: center;
