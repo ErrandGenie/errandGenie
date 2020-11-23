@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/pages.css" />
-    <title>Logistics Movement</title>
+    <title>Dashboard</title>
   </head>
   <body>
     <!-- Aside Bar -->
@@ -20,15 +20,13 @@
         <div class="line2"></div>
         <div class="line3"></div>
         <div class="navbar-brand">
-          <a href="../index.html"
-            ><img src="../images/Group 27.png" alt="logo"
-          /></a>
+          <a href="/"><img src="../images/Group 27.png" alt="logo" /></a>
         </div>
         <!--End of navbar brand-->
 
         <ul>
           <li>
-            <a href="../pages/dashboard.html">
+            <a href="#">
               <div class="row flex-nowrap">
                 <div class="col-xs-1"><i class="fas fa-th-large"></i></div>
                 <div class="col-md-10">Dashboard</div>
@@ -36,7 +34,7 @@
             >
           </li>
           <li>
-            <a href="#">
+            <a href="/movement">
               <div class="row flex-nowrap">
                 <div class="col-xs-1"><i class="fas fa-truck"></i></div>
                 <div class="col-md-10">Movement</div>
@@ -44,7 +42,7 @@
             >
           </li>
           <li>
-            <a href="../pages/personal-errands.html">
+            <a href="/personal-errands">
               <div class="row flex-nowrap">
                 <div class="col-xs-1"><i class="fas fa-shopping-cart"></i></div>
                 <div class="col-md-10">Errands</div>
@@ -52,7 +50,7 @@
             >
           </li>
           <li>
-            <a href="../pages/delivery.html">
+            <a href="/delivery">
               <div class="row flex-nowrap">
                 <div class="col-xs-1"><i class="fas fa-people-carry"></i></div>
                 <div class="col-md-10">Delivery</div>
@@ -128,122 +126,98 @@
         <div class="row">
           <div class="col-md-8">
             <!-- Heading -->
-            <h3>Logistics Movement</h3>
+            <h3>Dashboard</h3>
             <hr />
             <!-- End of Heading  -->
-            <div class="background">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7926.810847690561!2d0.46820879999999243!3d6.5964301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1604588580858!5m2!1sen!2sgh"
-                width="689.45"
-                height="719.45"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-              <!--End of iframe-->
-
-              <div class="d-flex justify-content-center">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Details for Logistics Movement</h6>
-                  </div>
-                  <div class="card-body">
-                    <form>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-map-marker-alt"></i
-                          ></span>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Pick-up Location"
-                          required
-                        />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-calendar-alt"></i
-                          ></span>
-                        </div>
-                        <input
-                          type="date"
-                          class="form-control"
-                          placeholder="Pick-up Date"
-                          required
-                        />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="far fa-clock"></i
-                          ></span>
-                        </div>
-                        <input
-                          type="time"
-                          class="form-control"
-                          placeholder="Pick-up Time"
-                          required
-                        />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fas fa-map-marker-alt"></i>
-                          </span>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Destination"
-                          required
-                        />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-suitcase-rolling"></i
-                          ></span>
-                        </div>
-                        <input
-                          type="number"
-                          class="form-control"
-                          placeholder="Number of luggages/items"
-                          required
-                        />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"
-                            ><i class="fas fa-users"></i
-                          ></span>
-                        </div>
-                        <select name="ride with others" id="share ride">
-                          <option value="alone">Ride Alone</option>
-                          <option value="1">Ride with Another</option>
-                          <option value="2">Ride with 2 Others</option>
-                          <option value="3">Ride with 3 Others</option>
-                          <option value="4">Ride with 4 Others</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <input
-                          type="submit"
-                          value="Proceed"
-                          class="btn proceed_btn"
-                        />
-                      </div>
-                    </form>
-                  </div>
-                </div>
+            <!-- Jumbotron -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Welcome User !</h1>
+                <p class="lead">How are you doing today? Select a task to begin...</p>
               </div>
+              <!--End of jumbotron container-->
             </div>
-            <!--End of background div-->
+            <!--End of Jumbotron-->
+            <!-- Jumbotron Image -->
+            <div class="jumbo-img float-right">
+              <img src="../images/undraw_Mobile_app_p3ts.svg" alt="Welcome" />
+            </div>
+            <!--End of jumbotron image-->
+            <div class="row cards">
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(1, 100, 100)">
+                    <i class="fas fa-tags"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: teal">
+                    <p>Total Orders</p>
+
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--end of first col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(214, 61, 5)">
+                    <i class="fas fa-truck-loading"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: orangered">
+                    <p>Total Movement</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--end of second col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(211, 141, 12)">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: orange">
+                    <p>Total Errands</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--End of third col-xs-6-->
+              <div class="col-xs-6">
+                <div class="row flex-nowrap">
+                  <div class="icon" style="background-color: rgb(78, 4, 253)">
+                    <i class="fas fa-biking"></i>
+                  </div>
+                  <!--End of icon div-->
+                  <div class="body" style="background-color: rgb(137, 105, 252)">
+                    <p>Total Delivery</p>
+                    <h6>0</h6>
+                  </div>
+                  <!--End of body div-->
+                </div>
+                <!--End of nowrap row-->
+              </div>
+              <!--End of col-xs-6-->
+            </div>
+            <!--End of cards div-->
+
+            <!-- Recent Task -->
+            <div class="inline">
+              <h4>Recent Tasks</h4>
+              <span>View All</span>
+            </div>
+            <div class="box">
+              <h6>No Recent Task Task</h6>
+              <span><i class="fas fa-clock"></i> 11/3/2020 2:56 PM</span>
+            </div>
+            <!--End of box div -->
           </div>
           <!--End of col-md-8-->
 
@@ -286,10 +260,7 @@
     <!-- Main Body -->
 
     <script src="../js/pages.js"></script>
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
       // Load the Visualization API and the corechart package.
       google.charts.load("current", { packages: ["corechart"] });
@@ -317,16 +288,11 @@
         };
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(
-          document.getElementById("chart_div")
-        );
+        var chart = new google.visualization.PieChart(document.getElementById("chart_div"));
         chart.draw(data, options);
       }
     </script>
-    <script
-      src="https://kit.fontawesome.com/e1442cffb3.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e1442cffb3.js" crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

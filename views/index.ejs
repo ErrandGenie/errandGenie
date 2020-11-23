@@ -1,0 +1,217 @@
+<%- include("partials/header") -%>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
+    <a class="navbar-brand" href="/"><img src="images/Group 27.png" alt="logo" /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse float-right text-right pr-0" id="navbarNav">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Logistics Movement</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Errand Services</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Delivery Services</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Start of carousel -->
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+    data-interval="4500"
+    data-pause="false"
+  >
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="./images/logisticsintruck.jpg" class="d-block w-100" alt=""> -->
+        <div class="info">
+          <h1>Logistics</h1>
+          <p>We move logistics across Ghana</p>
+          <a href="/login" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="./images/veggies.jpg" class="d-block w-100" alt=""> -->
+        <div class="info">
+          <h1>Errands</h1>
+          <p>Make the list. We'll shop it!</p>
+          <a href="/login" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="./images/deliveryguy.jpg" class="d-block w-100" alt=""> -->
+        <div class="info">
+          <h1>Delivery</h1>
+          <p>Door-to-door at its best</p>
+          <a href="/login" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel prev and next buttons begin -->
+    <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="fa fa-chevron-left fa-2x"></span
+    ></a>
+
+    <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+      <span class="fa fa-chevron-right fa-2x"></span
+    ></a>
+    <!-- Carousel prev and next buttons end -->
+  </div>
+  <!-- End of carousel -->
+  <div class="container layer1">
+    <div class="row justify-content-center text-center headCard">
+      <div class="col-md-2">
+        Logistics Movement
+        <hr />
+      </div>
+      <div class="col-md-2">
+        Errands
+        <hr />
+      </div>
+      <div class="col-md-2">
+        Deliveries
+        <hr />
+      </div>
+      <div class="col-md-2">
+        Dispatch
+        <hr />
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="row justify-content-center text-center" style="margin-top: 90px"><h1>Our Expert Solutions</h1></div>
+    <div class="col-md-9 heading">
+      <h4><span>What We Do</span></h4>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/undraw_Moving_twwf.svg" alt="logistics movement" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">Move Logistics Hassle-free</h4>
+            <p class="card-text">
+              Avoid delays, driver 'wahala' and damage to your items. We help you connect to drivers quickly to help you
+              move all your logistics.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/undraw_shopping_app_flsj.svg" alt="errands" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">Expert Errand Solutions</h4>
+            <p class="card-text">
+              In today's fast-paced and busy world, you can rely on us to meet all your errand needs in a safe and
+              reliable manner while you focus on productive work.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/undraw_On_the_way_re_swjt.svg" alt="deliveries" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">Deliveries At Your Fingertips</h4>
+            <p class="card-text">
+              Have items to deliver? Need items to be delivered to you? Let us take care of it in good time.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center text-center convenience">
+    <h1>
+      YOUR CONVENIENCE <br />
+      IS JUST A CLICK OF <br />
+      A BUTTON AWAY
+    </h1>
+  </div>
+
+  <div class="row justify-content-center text-center cards"><h1>Why Go With Us?</h1></div>
+  <div class="col-md-9 heading">
+    <h4><span>Our Values</span></h4>
+  </div>
+  <div class="row justify-content-center text-center cards">
+    <div class="col-md-2">
+      <div class="circle">
+        <i class="fas fa-user-shield"></i>
+      </div>
+      <div class="body">
+        <h3 class="title">Safety</h3>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="circle">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <div class="body">
+        <h3 class="title">Convenience</h3>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="circle">
+        <i class="fas fa-money-bill-alt"></i>
+      </div>
+      <div class="body">
+        <h3 class="title">Affordability</h3>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="circle">
+        <i class="fas fa-stopwatch"></i>
+      </div>
+      <div class="body">
+        <h3 class="title">Time-Bound</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include("partials/footer") -%>
