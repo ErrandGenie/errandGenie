@@ -58,7 +58,8 @@ app.get("/corporate-errands", (req, res) => {
   res.render("corporate-errands", { title: "corporate-errands", css: "css/pages.css" });
 });
 
-app.listen(8000, (err) => {
+const port = process.env.PORT || 8000;
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
   } else {
