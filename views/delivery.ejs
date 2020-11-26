@@ -133,12 +133,10 @@
             <div class="delivery">
               <form>
                 <div class="form-row">
+                  <h3 class="form-group col-md-12">Pick-up</h3>
                   <div class="form-group col-md-6">
                     <label for="pick-up-location">Pick-up Location</label>
-                    <span
-                      id="password-field"
-                      class="fas fa-map-marker-alt field-icon toggle-password position-absolute"
-                    ></span>
+                    <span class="fas fa-map-marker-alt field-icon toggle-password position-absolute"></span>
                     <input type="location" class="form-control" id="pick-up-location" placeholder="Pick-up location" />
                   </div>
                   <div class="form-group col-md-6">
@@ -146,7 +144,19 @@
                     <input type="datetime-local" class="form-control" id="time" />
                   </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row mb-3">
+                  <div class="form-group col-md-6">
+                    <label for="pick-up-contact">Pick-up Contact Person</label>
+                    <span class="fa fa-user field-icon toggle-password position-absolute"></span>
+                    <input type="text" class="form-control" id="pick-up-contact" placeholder="Pick-up contact" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone-number">Phone number</label>
+                    <span class="fa fa-phone field-icon toggle-password position-absolute"></span>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+                </div>
+                <!-- <div class="form-row">
                   <div class="form-group col-md-9 address">
                     <label for="inputAddress">Drop-off Location(s)</label>
                     <span id="password-field" class="fas fa-map-marker-alt field-icon position-absolute"></span>
@@ -162,28 +172,48 @@
                       <i class="fas fa-plus"></i>Location
                     </button>
                   </div>
+                </div> -->
+                <div class="form-row">
+                  <h3 class="form-group col-md-12">Drop-off</h3>
+                  <div class="form-group col-md-12">
+                    <label for="pick-up-location">Drop-off Location</label>
+                    <span class="fas fa-map-marker-alt field-icon toggle-password position-absolute"></span>
+                    <input type="location" class="form-control" id="pick-up-location" placeholder="Drop-off location" />
+                  </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="description">Notes and Comments</label>
+                    <label for="drop-off-contact">Drop-off Contact Person</label>
+                    <span class="fa fa-user field-icon toggle-password position-absolute"></span>
+                    <input type="text" class="form-control" id="pick-up-contact" placeholder="Drop-off contact" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone-number">Phone number</label>
+                    <span class="fa fa-phone field-icon toggle-password position-absolute"></span>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="description">Item description</label>
                     <textarea
                       class="form-control"
                       id="description"
                       rows="3"
-                      placeholder="Additional notes and comments"
+                      placeholder="Describe the item to be delivered..."
                     ></textarea>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="file">Add a file</label>
+                    <label for="file">Attach image</label>
                     <input type="file" class="form-control-file" id="File" />
                   </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" />
                     <label class="form-check-label" for="gridCheck"> Check me out </label>
                   </div>
-                </div>
+                </div> -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLoginAvatar">
                   Proceed
                 </button>

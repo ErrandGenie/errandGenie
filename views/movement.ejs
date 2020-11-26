@@ -175,22 +175,48 @@
                         </div>
                         <input type="text" class="form-control" placeholder="Destination" required />
                       </div>
-                      <div class="input-group form-group">
+                      <!-- <div class="input-group form-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"><i class="fas fa-suitcase-rolling"></i></span>
                         </div>
                         <input type="number" class="form-control" placeholder="Number of luggages/items" required />
+                      </div> -->
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-suitcase-rolling"></i></span>
+                        </div>
+
+                        <select class="form-control" name="type of goods" id="goods type">
+                          <option class="form-control" value="alone">--- Choose type of goods ---</option>
+                          <option class="form-control" value="1">Food</option>
+                          <option class="form-control" value="2">Office items</option>
+                          <option class="form-control" value="3">Market goods</option>
+                          <option class="form-control" value="4">General goods</option>
+                        </select>
+                      </div>
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-suitcase-rolling"></i></span>
+                        </div>
+                        <select class="form-control" name="amount of goods" id="goods amount">
+                          <option value="alone">--- Estimated amount of goods ---</option>
+                          <option value="1">Mahama-Can-Do</option>
+                          <option value="1">A small car will do</option>
+                          <option value="2">A pick-up will do</option>
+                          <option value="3">A KIA truck will do</option>
+                          <option value="4">15-seater bus</option>
+                          <option value="5">Other</option>
+                        </select>
                       </div>
                       <div class="input-group form-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text"><i class="fas fa-users"></i></span>
                         </div>
-                        <select name="ride with others" id="share ride">
-                          <option value="alone">Ride Alone</option>
-                          <option value="1">Ride with Another</option>
-                          <option value="2">Ride with 2 Others</option>
-                          <option value="3">Ride with 3 Others</option>
-                          <option value="4">Ride with 4 Others</option>
+                        <select class="form-control" name="ride with others" id="share ride">
+                          <option value="alone">Care to move your items in a group?</option>
+                          <option value="1">Group of one other</option>
+                          <option value="1">Group of two others</option>
+                          <option value="2">Group of three others</option>
                         </select>
                       </div>
 
