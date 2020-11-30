@@ -12,10 +12,10 @@
         <div class="delivery">
           <form>
             <div class="form-row">
+              <h3 class="form-group col-md-12">Pick-up</h3>
               <div class="form-group col-md-6">
                 <label for="pick-up-location">Pick-up Location</label>
                 <span
-                  id="password-field"
                   class="fas fa-map-marker-alt field-icon toggle-password position-absolute"
                 ></span>
                 <input
@@ -30,178 +30,80 @@
                 <input type="datetime-local" class="form-control" id="time" />
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-9 address">
-                <label for="inputAddress">Drop-off Location(s)</label>
+            <div class="form-row mb-3">
+              <div class="form-group col-md-6">
+                <label for="pick-up-contact">Pick-up Contact Person</label>
                 <span
-                  id="password-field"
-                  class="fas fa-map-marker-alt field-icon position-absolute"
+                  class="fa fa-user field-icon toggle-password position-absolute"
                 ></span>
                 <input
                   type="text"
                   class="form-control"
-                  id="inputAddress"
-                  placeholder="Sakaman, Blue-Lagoon Street"
+                  id="pick-up-contact"
+                  placeholder="Pick-up contact"
                 />
               </div>
-              <div class="form-group col-md-3">
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  onclick="newInput()"
-                >
-<<<<<<< HEAD
-                  <i class="fas fa-plus"></i>Location
-=======
-              </li>
-            </ul>
-            <!--End of user ul-->
-          </div>
-          <!--End of menu div-->
-        </div>
-        <!--End of user div-->
-      </div>
-      <!--End of mytoggler-->
-    </div>
-    <!--End of sidenav-->
-    <!-- Aside Bar -->
+              <div class="form-group col-md-6">
+                <label for="phone-number">Phone number</label>
+                <span
+                  class="fa fa-phone field-icon toggle-password position-absolute"
+                ></span>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </div>
 
-    <!-- Main Body -->
-    <main>
-      <div class="container main">
-        <div class="row">
-          <div class="col-md-8">
-            <!-- Heading -->
-            <h3>Delivery</h3>
-            <hr />
-            <!-- End of Heading  -->
-            <div class="delivery">
-              <form>
-                <div class="form-row">
-                  <h3 class="form-group col-md-12">Pick-up</h3>
-                  <div class="form-group col-md-6">
-                    <label for="pick-up-location">Pick-up Location</label>
-                    <span class="fas fa-map-marker-alt field-icon toggle-password position-absolute"></span>
-                    <input
-                      type="location"
-                      class="form-control"
-                      id="pick-up-location"
-                      placeholder="Pick-up location"
-                    />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="time">Pick-up Time</label>
-                    <input type="datetime-local" class="form-control" id="time" />
-                  </div>
-                </div>
-                <div class="form-row mb-3">
-                  <div class="form-group col-md-6">
-                    <label for="pick-up-contact">Pick-up Contact Person</label>
-                    <span class="fa fa-user field-icon toggle-password position-absolute"></span>
-                    <input type="text" class="form-control" id="pick-up-contact" placeholder="Pick-up contact" />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="phone-number">Phone number</label>
-                    <span class="fa fa-phone field-icon toggle-password position-absolute"></span>
-                    <input type="tel" class="form-control" id="phone" />
-                  </div>
-                </div>
-                <!-- <div class="form-row">
-                  <div class="form-group col-md-9 address">
-                    <label for="inputAddress">Drop-off Location(s)</label>
-                    <span id="password-field" class="fas fa-map-marker-alt field-icon position-absolute"></span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      placeholder="Sakaman, Blue-Lagoon Street"
-                    />
-                  </div>
-                  <div class="form-group col-md-3">
-                    <button class="btn btn-primary" type="button" onclick="newInput()">
-                      <i class="fas fa-plus"></i>Location
-                    </button>
-                  </div>
-                </div> -->
-                <div class="form-row">
-                  <h3 class="form-group col-md-12">Drop-off</h3>
-                  <div class="form-group col-md-12">
-                    <label for="pick-up-location">Drop-off Location</label>
-                    <span class="fas fa-map-marker-alt field-icon toggle-password position-absolute"></span>
-                    <input
-                      type="location"
-                      class="form-control"
-                      id="pick-up-location"
-                      placeholder="Drop-off location"
-                    />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="drop-off-contact">Drop-off Contact Person</label>
-                    <span class="fa fa-user field-icon toggle-password position-absolute"></span>
-                    <input type="text" class="form-control" id="pick-up-contact" placeholder="Drop-off contact" />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="phone-number">Phone number</label>
-                    <span class="fa fa-phone field-icon toggle-password position-absolute"></span>
-                    <input type="tel" class="form-control" id="phone" />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="description">Item description</label>
-                    <textarea
-                      class="form-control"
-                      id="description"
-                      rows="3"
-                      placeholder="Describe the item to be delivered..."
-                    ></textarea>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="file">Attach image</label>
-                    <input type="file" class="form-control-file" id="File" />
-                  </div>
-                </div>
-                <!-- <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                    <label class="form-check-label" for="gridCheck"> Check me out </label>
-                  </div>
-                </div> -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLoginAvatar">
-                  Proceed
->>>>>>> e52722c294d0bda80b137f049b2ab7f4325cee95
-                </button>
+            <div class="form-row">
+              <h3 class="form-group col-md-12">Drop-off</h3>
+              <div class="form-group col-md-12">
+                <label for="pick-up-location">Drop-off Location</label>
+                <span
+                  class="fas fa-map-marker-alt field-icon toggle-password position-absolute"
+                ></span>
+                <input
+                  type="location"
+                  class="form-control"
+                  id="pick-up-location"
+                  placeholder="Drop-off location"
+                />
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="description">Notes and Comments</label>
+                <label for="drop-off-contact">Drop-off Contact Person</label>
+                <span
+                  class="fa fa-user field-icon toggle-password position-absolute"
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pick-up-contact"
+                  placeholder="Drop-off contact"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="phone-number">Phone number</label>
+                <span
+                  class="fa fa-phone field-icon toggle-password position-absolute"
+                ></span>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="description">Item description</label>
                 <textarea
                   class="form-control"
                   id="description"
                   rows="3"
-                  placeholder="Additional notes and comments"
+                  placeholder="Describe the item to be delivered..."
                 ></textarea>
               </div>
               <div class="form-group col-md-6">
-                <label for="file">Add a file</label>
+                <label for="file">Attach image</label>
                 <input type="file" class="form-control-file" id="File" />
               </div>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
+
             <button
               type="button"
               class="btn btn-primary"
@@ -211,55 +113,8 @@
               Proceed
             </button>
           </form>
-          <!--Modal: Login with Avatar Form-->
-          <div
-            class="modal fade"
-            id="modalLoginAvatar"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="myModalLabel"
-            aria-hidden="true"
-          >
-            <div
-              class="modal-dialog cascading-modal modal-avatar modal-md"
-              role="document"
-            >
-              <!--Content-->
-              <div class="modal-content">
-                <!--Header-->
-                <div class="modal-header">
-                  <img
-                    src="../images/etty-fidele-6UWqw25wfLI-unsplash.png"
-                    alt="avatar"
-                    class="rounded-circle img-responsive"
-                  />
-                </div>
-                <!--Body-->
-                <div class="modal-body text-center mb-1">
-                  <h5 class="mt-1 mb-2">Genie: Seth Megbetor</h5>
-
-                  <div class="md-form ml-0 mr-0">
-                    <h5 class="mt-1 mb-2">Pick-up Locations:</h5>
-                    <p>Trafalgar Taxi Rank, Ho Municipal</p>
-                    <p>Date: 11/21/2020 at 2:30pm</p>
-
-                    <h5 class="mt-1 mb-2">Drop-off Locations:</h5>
-                    <p>Poly Junction, Ho Municipal</p>
-                    <p>Agbenorxevi, Ho Municipal</p>
-
-                    <h5 class="mt-1 mb-2">Charge</h5>
-                    <p>GHS 20.00</p>
-                  </div>
-                </div>
-              </div>
-              <!--/.Content-->
-            </div>
-          </div>
-          <!--Modal: Login with Avatar Form-->
         </div>
-        <!--End of background div-->
       </div>
-      <!--End of col-md-8-->
 
       <!-- Second Column -->
       <div class="col-md-4">

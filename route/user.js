@@ -52,6 +52,39 @@ router.get("/dashboard", (req, res) => {
   }
 });
 
+router.get("/movement", (req, res) => {
+  if (req.isAuthenticated()) {
+    res.render("movement", {
+      title: "movement",
+      user: req.user.username,
+    });
+  } else {
+    res.redirect("/login");
+  }
+});
+
+router.get("/errands", (req, res) => {
+  if (req.isAuthenticated()) {
+    res.render("market-shopping", {
+      title: "Errands: market shopping",
+      user: req.user.username,
+    });
+  } else {
+    res.redirect("/login");
+  }
+});
+
+router.get("/delivery", (req, res) => {
+  if (req.isAuthenticated()) {
+    res.render("delivery", {
+      title: "delivery",
+      user: req.user.username,
+    });
+  } else {
+    res.redirect("/login");
+  }
+});
+
 router.get("/logout", function (req, res) {
   req.logout();
   res.redirect("/");
