@@ -1,175 +1,141 @@
 <%- include("partials/header") -%>
-    <header>
-      <div class="newBanner" style="width: 100%">
-        <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
-          <a class="navbar-brand" href="/"
-            ><img src="../images/Group 27.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse float-right text-right pr-0"
-            id="navbarNav"
-          >
-            <ul class="nav navbar-nav navbar-center">
-              <li class="nav-item">
-                <a class="nav-link" href="/"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Logistics Movement</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Errand Services</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Delivery Services</a>
-                </div>
-              </li>
+<header>
+  <div class="newBanner" style="width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-dark col-md-12 navbar">
+      <a class="navbar-brand" href="/"><img src="../images/Group 27.png" alt="logo" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-right text-right pr-0" id="navbarNav">
+        <ul class="nav navbar-nav navbar-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Logistics Movement</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Errand Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Delivery Services</a>
+            </div>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About Us</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/contact-us">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="message2">
-          <h1>Contact Us</h1>
-          <h4>We'd love to hear from you!</h4>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact-us">Contact Us</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+    <div class="message2">
+      <h1>Contact Us</h1>
+      <h4>We'd love to hear from you!</h4>
+    </div>
+  </div>
+</header>
 
-    <section id="layer1">
-      <div class="container page">
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <div class="contact-form">
-                <div class="form-group">
-                  <label class="control-label col-sm-4" for="fname"
-                    >First Name:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="fname"
-                      placeholder="e.g. Ama"
-                      name="fname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-4" for="lname"
-                    >Last Name:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lname"
-                      placeholder=" e.g. Koomson"
-                      name="lname"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="email"
-                    >Email:</label
-                  >
-                  <div class="col-sm-10">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="e.g. amakoomson@gmail.com"
-                      name="email"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="comment"
-                    >Message:</label
-                  >
-                  <div class="col-sm-10">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      id="comment"
-                      placeholder="Tell us something..."
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-4 col-sm-10">
-                    <button type="submit" class="btn btn-primary">
-                      Submit
-                    </button>
-                  </div>
-                </div>
+<section id="layer1">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="fname">First Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="fname" placeholder="e.g. Ama" name="fname" />
               </div>
-            </form>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="lname">Last Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="lname" placeholder=" e.g. Koomson" name="lname" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. amakoomson@gmail.com"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comment">Message:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Tell us something..."></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-4 col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 enquiries">
-            <h4>General enquiries</h4>
-            <div class="address">
-              <div class="row">
-                <div class="col-md-1">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="col-md-8">
-                  <h6>Address</h6>
-                  <p>PMB 1000, Ho-Volta Region</p>
-                </div>
-              </div>
+        </form>
+      </div>
+      <div class="col-md-6 enquiries">
+        <h4>General enquiries</h4>
+        <div class="address">
+          <div class="row">
+            <div class="col-md-1">
+              <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="phone">
-              <div class="row">
-                <div class="col-md-1">
-                  <i class="fas fa-phone" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-8">
-                  <h6>Phone</h6>
-                  <p>+233 200418826</p>
-                </div>
-              </div>
+            <div class="col-md-8">
+              <h6>Address</h6>
+              <p>PMB 1000, Ho-Volta Region</p>
             </div>
-            <div class="mail">
-              <div class="row">
-                <div class="col-md-1"><i class="fas fa-envelope"></i></div>
-                <div class="col-md-10">
-                  <h6>Email</h6>
-                  <p>errandgenie@gmail.com</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="row">
+            <div class="col-md-1">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-8">
+              <h6>Phone</h6>
+              <p>+233 200418826</p>
+            </div>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="row">
+            <div class="col-md-1"><i class="fas fa-envelope"></i></div>
+            <div class="col-md-10">
+              <h6>Email</h6>
+              <p>errandgenie@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <%- include("partials/footer") -%>
+<%- include("partials/footer") -%>
