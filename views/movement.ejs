@@ -1,292 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/pages.css" />
-    <title>Logistics Movement</title>
-  </head>
-  <body>
-    <!-- Aside Bar -->
-    <div class="sidenav">
-      <div class="mytoggler" onclick="myFunction(this)">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <div class="navbar-brand">
-          <a href="/"><img src="../images/Group 27.png" alt="logo" /></a>
-        </div>
-        <!--End of navbar brand-->
+<%- include("partials/pagesHeader") -%>
+<!-- Main Body -->
+<main>
+  <div class="container main">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Heading -->
+        <h3>Logistics Movement</h3>
+        <hr />
+        <!-- End of Heading  -->
+        <div class="background">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7926.810847690561!2d0.46820879999999243!3d6.5964301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1604588580858!5m2!1sen!2sgh"
+            width="689.45"
+            height="719.45"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+          <!--End of iframe-->
 
-        <ul>
-          <li>
-            <a href="/dashboard">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="fas fa-th-large"></i></div>
-                <div class="col-md-10">Dashboard</div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="fas fa-truck"></i></div>
-                <div class="col-md-10">Movement</div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="/personal-errands">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="fas fa-shopping-cart"></i></div>
-                <div class="col-md-10">Errands</div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="/delivery">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="fas fa-people-carry"></i></div>
-                <div class="col-md-10">Delivery</div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="far fa-chart-bar"></i></div>
-                <div class="col-md-10">Transaction</div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <div class="row flex-nowrap">
-                <div class="col-xs-1"><i class="fas fa-info-circle"></i></div>
-                <div class="col-md-10">Support</div>
-              </div></a
-            >
-          </li>
-        </ul>
-        <div class="user">
-          <div class="dropdown-toggle">
-            <div class="circle">
-              <i class="fas fa-user"></i>
-            </div>
-            <text>User</text>
-          </div>
-          <div class="menu">
-            <ul>
-              <li>
-                <a href="#">
-                  <div class="row flex-nowrap">
-                    <div class="col-xs-1"><i class="fas fa-bell"></i></div>
-                    <div class="col-md-10">Notifications</div>
-                  </div></a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <div class="row flex-nowrap">
-                    <div class="col-xs-1"><i class="fas fa-cog"></i></div>
-                    <div class="col-md-10">Settings</div>
-                  </div></a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <div class="row flex-nowrap">
-                    <div class="col-xs-1">
-                      <i class="fas fa-sign-out-alt"></i>
+          <div class="d-flex justify-content-center">
+            <div class="card">
+              <div class="card-header">
+                <h6>Details for Logistics Movement</h6>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-map-marker-alt"></i
+                      ></span>
                     </div>
-                    <div class="col-md-10">Log Out</div>
-                  </div></a
-                >
-              </li>
-            </ul>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Pick-up Location"
+                      required
+                    />
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-calendar-alt"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="Pick-up Date"
+                      required
+                    />
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="far fa-clock"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="time"
+                      class="form-control"
+                      placeholder="Pick-up Time"
+                      required
+                    />
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Destination"
+                      required
+                    />
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-suitcase-rolling"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Number of luggages/items"
+                      required
+                    />
+                  </div>
+                  <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fas fa-users"></i
+                      ></span>
+                    </div>
+                    <select name="ride with others" id="share ride">
+                      <option value="alone">Ride Alone</option>
+                      <option value="1">Ride with Another</option>
+                      <option value="2">Ride with 2 Others</option>
+                      <option value="3">Ride with 3 Others</option>
+                      <option value="4">Ride with 4 Others</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      value="Proceed"
+                      class="btn proceed_btn"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <!--End of menu div-->
         </div>
-        <!--End of user div-->
+        <!--End of background div-->
       </div>
-      <!--End of mytoggler-->
+      <!--End of col-md-8-->
+
+      <!-- Second Column -->
+      <div class="col-md-4">
+        <div class="better">
+          <!-- Calender -->
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=v9c0f7n1nojmhntus0ms9oqs18%40group.calendar.google.com&ctz=Africa%2FAccra"
+            style="border: 0"
+            width="800"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+          <!-- New Tasks -->
+          <div class="inline">
+            <h4>Your Tasks</h4>
+            <span>View All</span>
+          </div>
+          <!--End of inline div-->
+          <div class="box">
+            <h6>You don't have any Task</h6>
+            <span><i class="fas fa-clock"></i> 11/3/2020 2:56 PM</span>
+          </div>
+          <!--End of box div-->
+
+          <!--Div that will hold the pie chart-->
+          <div id="chart_div" style="margin-top: 0"></div>
+        </div>
+        <!--End of better-->
+      </div>
+      <!--End of col-md-4-->
     </div>
-    <!--End of sidenav-->
-    <!-- Aside Bar -->
+    <!--End of row -->
+  </div>
+  <!--End of container main-->
+</main>
 
-    <!-- Main Body -->
-    <main>
-      <div class="container main">
-        <div class="row">
-          <div class="col-md-8">
-            <!-- Heading -->
-            <h3>Logistics Movement</h3>
-            <hr />
-            <!-- End of Heading  -->
-            <div class="background">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7926.810847690561!2d0.46820879999999243!3d6.5964301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1604588580858!5m2!1sen!2sgh"
-                width="689.45"
-                height="719.45"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-              <!--End of iframe-->
+<!-- Main Body -->
 
-              <div class="d-flex justify-content-center">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Details for Logistics Movement</h6>
-                  </div>
-                  <div class="card-body">
-                    <form>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Pick-up Location" required />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                        </div>
-                        <input type="date" class="form-control" placeholder="Pick-up Date" required />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="far fa-clock"></i></span>
-                        </div>
-                        <input type="time" class="form-control" placeholder="Pick-up Time" required />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <i class="fas fa-map-marker-alt"></i>
-                          </span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Destination" required />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-suitcase-rolling"></i></span>
-                        </div>
-                        <input type="number" class="form-control" placeholder="Number of luggages/items" required />
-                      </div>
-                      <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="fas fa-users"></i></span>
-                        </div>
-                        <select name="ride with others" id="share ride">
-                          <option value="alone">Ride Alone</option>
-                          <option value="1">Ride with Another</option>
-                          <option value="2">Ride with 2 Others</option>
-                          <option value="3">Ride with 3 Others</option>
-                          <option value="4">Ride with 4 Others</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <input type="submit" value="Proceed" class="btn proceed_btn" />
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--End of background div-->
-          </div>
-          <!--End of col-md-8-->
-
-          <!-- Second Column -->
-          <div class="col-md-4">
-            <div class="better">
-              <!-- Calender -->
-              <iframe
-                src="https://calendar.google.com/calendar/embed?src=v9c0f7n1nojmhntus0ms9oqs18%40group.calendar.google.com&ctz=Africa%2FAccra"
-                style="border: 0"
-                width="800"
-                height="600"
-                frameborder="0"
-                scrolling="no"
-              ></iframe>
-              <!-- New Tasks -->
-              <div class="inline">
-                <h4>Your Tasks</h4>
-                <span>View All</span>
-              </div>
-              <!--End of inline div-->
-              <div class="box">
-                <h6>You don't have any Task</h6>
-                <span><i class="fas fa-clock"></i> 11/3/2020 2:56 PM</span>
-              </div>
-              <!--End of box div-->
-
-              <!--Div that will hold the pie chart-->
-              <div id="chart_div" style="margin-top: 0"></div>
-            </div>
-            <!--End of better-->
-          </div>
-          <!--End of col-md-4-->
-        </div>
-        <!--End of row -->
-      </div>
-      <!--End of container main-->
-    </main>
-
-    <!-- Main Body -->
-
-    <script src="../js/pages.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script>
-      // Load the Visualization API and the corechart package.
-      google.charts.load("current", { packages: ["corechart"] });
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn("string", "Task");
-        data.addColumn("number", "Total");
-        data.addRows([
-          ["Logistic Movement", 1],
-          ["Errands", 1],
-          ["Deliveries", 1],
-        ]);
-
-        // Set chart options
-        var options = {
-          title: "Statistics on Transactions During the last Month ",
-        };
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById("chart_div"));
-        chart.draw(data, options);
-      }
-    </script>
-    <script src="https://kit.fontawesome.com/e1442cffb3.js" crossorigin="anonymous"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+<%- include("partials/pagesFooter") -%>
