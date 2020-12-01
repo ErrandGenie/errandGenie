@@ -34,11 +34,20 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //------------ Mongo Connection ------------//
-mongoose.connect("mongodb://localhost:27017/errandGenie", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-mongoose.set("useCreateIndex", true);
+// mongoose.connect("mongodb://localhost:27017/errandGenie", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+// mongoose.set("useCreateIndex", true);
+const db = require("./config/keys").mongoURI;
+
+mongoose
+  .connect(db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log(err));
 
 //------------ Passport Configuration ------------//
 require("./config/passport")(passport);
@@ -47,7 +56,8 @@ require("./config/passport")(passport);
 app.use("/", require("./route/user"));
 
 //------------ Port ------------//
-app.listen(8000, (err) => {
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, (err) => {
   if (err) {
     console.log(err);
   } else {

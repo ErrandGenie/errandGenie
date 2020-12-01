@@ -2,5 +2,9 @@
     "liveServer.settings.port": 5502,
     "prettier.endOfLine": "auto",
     "editor.formatOnPaste": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cSpell.ignoreWords": [
+        "cwpza",
+        "errandgenie"
+    ]
 }
