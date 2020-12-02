@@ -8,6 +8,10 @@ const userSchema = new mongoose.Schema({
   passport: String,
   googleId: String,
   secret: String,
+  emailToken: String,
+  isVerified: Boolean,
+  resetPasswordToken: String,
+  resetPasswordExpires: Date,
 });
 
 userSchema.plugin(passportLocalMongoose);

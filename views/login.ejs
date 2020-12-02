@@ -8,6 +8,13 @@
           <div class="card-header">
             <h3>Sign In</h3>
           </div>
+          <% if(error && error.length > 0) { %>
+       <div class="alert alert-danger"><p><%=error %></p></div>
+     <% } %>
+     
+     <% if(success && success.length > 0) { %>
+       <div class="alert alert-success"><p><%= success %></p></div>
+     <% } %>
           <div class="card-body">
             <form action="/login" method="POST">
               <div class="input-group form-group">

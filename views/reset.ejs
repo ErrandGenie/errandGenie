@@ -1,0 +1,53 @@
+<%- include("partials/header") -%>
+ 
+    <a href="/"
+      ><button class="btn btn-sm btn-primary back-btn"><i class="fa fa-home" aria-hidden="true"></i> Home</button></a
+    >
+    <div class="container">
+      <div class="d-flex justify-content-center text-center h-100">
+        <div class="card">
+          <div class="card-header">
+            <h3>Reset Password</h3>
+          </div>
+     <% if(error && error.length > 0) { %>
+       <div class="alert alert-danger"><p><%=error %></p></div>
+     <% } %>
+     
+     <% if(success && success.length > 0) { %>
+       <div class="alert alert-success"><p><%= success %></p></div>
+     <% } %>
+          <div class="card-body">
+            <form action="/reset/<%= token %>" method="POST">
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-key"></i></span>
+                </div>
+                <span id="password-field" class="fa fa-fw fa-eye field-icon toggle-password position-absolute"></span>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="password"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                </div>
+                <input type="password"name="confirm" class="form-control" placeholder="confirm password"
+                id="confirm_password" required  />
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit" class="btn login_btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/sign.js"></script>
+    <script src="https://kit.fontawesome.com/e1442cffb3.js" crossorigin="anonymous"></script>
+  </body>
+</html>

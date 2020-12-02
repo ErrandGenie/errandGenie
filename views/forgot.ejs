@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+ <div class="container">
+     <% if(error && error.length > 0) { %>
+       <div class="alert alert-danger"><p><%=error %></p></div>
+     <% } %>
+     
+     <% if(success && success.length > 0) { %>
+       <div class="alert alert-success"><p><%= success %></p></div>
+     <% } %>
+  </div>
+    <a href="/"
+      ><button class="btn btn-sm btn-primary back-btn"><i class="fa fa-home" aria-hidden="true"></i> Home</button></a
+    >
+    <div class="container">
+      <div class="d-flex justify-content-center text-center h-100">
+        <div class="card">
+          <div class="card-header">
+            <h3>Forgot Password</h3>
+          </div>
+          <div class="card-body">
+            <form action="/forgot" method="POST">
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div>
+                <input type="email" name="email" class="form-control" placeholder="email" required autofocus />
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit" class="btn login_btn" />
+              </div>
+             
+            </form>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center links">Don't have an account?<a href="/sign-up">Sign Up</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/sign.js"></script>
+    <script src="https://kit.fontawesome.com/e1442cffb3.js" crossorigin="anonymous"></script>
+  </body>
+</html>

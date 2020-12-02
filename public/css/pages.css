@@ -10,6 +10,7 @@
   overflow-x: hidden;
   padding-top: 20px;
   color: white;
+  width: 250px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -32,7 +33,7 @@
 .sidenav ul {
   list-style: none;
   line-height: 3rem;
-  padding-left: 30px;
+  margin-left: 50px;
 }
 
 li a {
@@ -264,6 +265,9 @@ input:focus {
 
 /* Mobile View */
 @media screen and (max-width: 768px) {
+  .sidenav{
+    width: fit-content;
+  }
   .main {
     width: 80%;
     top: 0;
