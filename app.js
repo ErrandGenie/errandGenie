@@ -40,13 +40,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //------------ Mongo Connection ------------//
-// mongoose.connect("mongodb://localhost:27017/errandGenie", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-// mongoose.set("useCreateIndex", true);
-const db = require("./config/keys").mongoURI;
 
+const db = require("./config/keys").mongoURI;
+mongoose.set("useCreateIndex", true);
 mongoose
   .connect(db, {
     useNewUrlParser: true,
