@@ -75,11 +75,11 @@ input:focus {
   color: white;
 }
 
-/* .btn {
+.boton {
   justify-content: center;
   margin-left: 60px;
   margin-top: 15px;
-} */
+}
 
 .back-btn {
   font-size: 1.2rem;

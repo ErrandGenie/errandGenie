@@ -1,18 +1,18 @@
 require("dotenv").config();
 const express = require("express"),
-      bodyParser = require("body-parser"),
-      mongoose = require("mongoose"),
-      { urlencoded } = require("body-parser"),
-      passport = require("passport"),
-      session = require("express-session"),
-      passportLocalMongoose = require("passport-local-mongoose"),
-      GoogleStrategy = require("passport-google-oauth20").Strategy,
-      findOrCreate = require("mongoose-findorcreate"),
-      sgMail = require("@sendgrid/mail");
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  bodyParser = require("body-parser"),
+  mongoose = require("mongoose"),
+  { urlencoded } = require("body-parser"),
+  passport = require("passport"),
+  session = require("express-session"),
+  passportLocalMongoose = require("passport-local-mongoose"),
+  GoogleStrategy = require("passport-google-oauth20").Strategy,
+  findOrCreate = require("mongoose-findorcreate"),
+  sgMail = require("@sendgrid/mail");
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const crypto = require("crypto"),
-{isNotVerified} = require("./middleware");
-    flash = require("connect-flash");
+  { isNotVerified } = require("./middleware");
+flash = require("connect-flash");
 
 const app = express();
 
@@ -55,11 +55,11 @@ mongoose
 require("./config/passport")(passport);
 
 //------------ flash configuration ------------//
-app.use((req, res, next)=>{
+app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   res.locals.success = req.flash("success");
   next();
-}) 
+});
 //------------ Routes ------------//
 app.use("/", require("./route/user"));
 app.use("/", require("./route/password"));
